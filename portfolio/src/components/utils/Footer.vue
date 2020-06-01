@@ -36,12 +36,12 @@ export default {
       githubLogo: GitHubLogo,
       twitterLogo: TwitterLogo,
       facebookLogo: FacebookLogo,
-      linkedinLogo: LinkedinLogo,
+      linkedinLogo: LinkedinLogo
     };
   },
   props: {
-    title: String,
-  },
+    title: String
+  }
 };
 </script>
 

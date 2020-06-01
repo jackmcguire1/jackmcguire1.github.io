@@ -7,6 +7,9 @@
 
     <CodeCard></CodeCard>
     <Projects></Projects>
+    <Timeline></Timeline>
+
+    <b-jumbotron id="Contact" variant="dark" lead="CONTACT"> </b-jumbotron>
   </div>
 </template>
 
@@ -14,7 +17,9 @@
 //import Googly from "@/components/utils/Googly.vue";
 import CodeCard from "@/components/utils/CodeCard.vue";
 import Projects from "@/components/pages/Projects.vue";
+import Timeline from "@/components/pages/Timeline.vue";
 import ProfilePic from "@/assets/jack.jpeg";
+
 export default {
   name: "Home",
   props: {},
@@ -26,6 +31,7 @@ export default {
   components: {
     CodeCard,
     Projects,
+    Timeline,
   },
 };
 </script>

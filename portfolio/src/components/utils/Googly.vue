@@ -40,7 +40,7 @@ export default {
         reset: false,
         radius: "natural",
         position: "center",
-        trigger: window,
+        trigger: window
       };
       var a = {
         top: 90,
@@ -50,7 +50,7 @@ export default {
         topRight: 45,
         topLeft: 135,
         bottomRight: -45,
-        bottomLeft: -135,
+        bottomLeft: -135
       };
       function c(f) {
         this.$iris = f;
@@ -61,7 +61,7 @@ export default {
           var g = f.offset();
           this.offset = {
             x: g.left + this.width / 2 - parseInt(f.css("left")),
-            y: g.top + this.height / 2 - parseInt(f.css("top")),
+            y: g.top + this.height / 2 - parseInt(f.css("top"))
           };
         };
       }
@@ -73,7 +73,7 @@ export default {
         this.iris = new c(f);
         this.pos = {
           x: (this.width - this.iris.width) / 2,
-          y: (this.height - this.iris.height) / 2,
+          y: (this.height - this.iris.height) / 2
         };
         f.css("left", this.pos.x + "px").css("top", this.pos.y + "px");
         this.padding = 0;
@@ -194,13 +194,13 @@ export default {
     $(".iris").xeyes();
   },
   props: {
-    title: String,
+    title: String
   },
   data() {
     return {
-      imgSrc: Gopher,
+      imgSrc: Gopher
     };
-  },
+  }
 };
 </script>
 

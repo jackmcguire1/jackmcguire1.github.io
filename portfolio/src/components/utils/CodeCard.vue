@@ -1,18 +1,14 @@
 <template>
   <div class="CodeCard">
-    <div>
-      <b-card
-        overlay
-        :img-src="avatar"
-        img-alt="Card Image"
-        text-variant="white"
-        title="Live, Love, Code."
-        sub-title="Subtitle"
-        img-height="400"
-        img-width="100%"
-      >
-      </b-card>
-    </div>
+    <template>
+      <v-parallax dark height="300" :src="avatar">
+        <v-row align="center" justify="center">
+          <v-col class="text-center" cols="19">
+            <h4 class="subheading">Live, Love, Code.</h4>
+          </v-col>
+        </v-row>
+      </v-parallax>
+    </template>
   </div>
 </template>
 

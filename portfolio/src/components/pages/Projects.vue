@@ -43,7 +43,7 @@
             Stat-Milestones is a Twitch extension I developed for a Twitch / AWS
             hackathon<br />
             This Twitch extension allows broadcaster's to track their Twitch
-            followers and subscribers.<br /><br>
+            followers and subscribers.<br /><br />
             Stat-Milestones is served by a serverless backend, hosted on AWS.<br />
           </p>
 
@@ -75,8 +75,8 @@
         <b-card-body>
           <b-img :src="vueLogo"></b-img><br /><br />
           <p>
-            Twitch-Extension-Vue-Template is a project template designed to help VueJS
-            developers<br />
+            Twitch-Extension-Vue-Template is a project template designed to help
+            VueJS developers<br />
             get started in developing a Twitch panel extension.
           </p>
 
@@ -132,12 +132,12 @@ export default {
   data() {
     return {
       statMLogo: StatMilestonesLogo,
-      vueLogo: VueLogo,
+      vueLogo: VueLogo
     };
   },
   components: {
-    Googly,
-  },
+    Googly
+  }
 };
 </script>
 

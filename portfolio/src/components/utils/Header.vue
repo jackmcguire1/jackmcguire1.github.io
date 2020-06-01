@@ -22,12 +22,12 @@ export default {
   name: "Header",
   data() {
     return {
-      avatar: ProfilePic,
+      avatar: ProfilePic
     };
   },
   props: {
-    title: String,
-  },
+    title: String
+  }
 };
 </script>
 

@@ -6,10 +6,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/*",
+    path: "*",
     name: "Index",
     component: Index
-  },
+  }
 ];
 
 const router = new VueRouter({
