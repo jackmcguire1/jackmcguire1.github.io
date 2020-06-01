@@ -18,8 +18,8 @@
         <b-card-body>
           <Googly></Googly><br /><br />
           <p>
-            Go-Twitch-Ext is a go module that provides utils and simplieifed
-            twitch API interaction to help user's <br />
+            Go-Twitch-Ext is a go module that provides utils and simplified
+            Twitch API interaction to help user's <br />
             create a backend or EBS for a Twitch Extension.
           </p>
         </b-card-body>
@@ -40,11 +40,11 @@
         <b-card-body>
           <b-img :src="statMLogo" height="300"></b-img><br /><br />
           <p>
-            Stat-Milestones is a Twitch extension i developed for a Twitch / AWS
+            Stat-Milestones is a Twitch extension I developed for a Twitch / AWS
             hackathon<br />
-            This Twitch extension allows broadcaster's to track their twitch
-            followers and subscribers<br />
-            Stat-Milestones is backed by a serverless backend hosted in AWS<br />
+            This Twitch extension allows broadcaster's to track their Twitch
+            followers and subscribers.<br /><br>
+            Stat-Milestones is served by a serverless backend, hosted on AWS.<br />
           </p>
 
           <b-list-group>
@@ -75,7 +75,7 @@
         <b-card-body>
           <b-img :src="vueLogo"></b-img><br /><br />
           <p>
-            Twitch-Extension-Vue-Template is a project designed to help VueJS
+            Twitch-Extension-Vue-Template is a project template designed to help VueJS
             developers<br />
             get started in developing a Twitch panel extension.
           </p>
