@@ -1,10 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
-        <q-avatar right>
-          <img src="https://avatars.githubusercontent.com/u/9089342?v=4" />
-        </q-avatar>
+      <q-toolbar class="bg-black text-white">
         <q-toolbar-title> Jack McGuire </q-toolbar-title>
 
         <q-btn
@@ -20,6 +17,18 @@
     </q-header>
 
     <q-drawer v-model="showNavigation" side="right" bordered>
+      <q-list>
+        <q-item-label header> Pages </q-item-label>
+
+        <div v-for="link in pagesList" :key="link.title">
+          <q-item clickable tag="a" target="_blank" :href="link.link">
+            <q-item-section>
+              <q-item-label>{{ link.title }}</q-item-label>
+            </q-item-section>
+          </q-item>
+        </div>
+      </q-list>
+
       <q-list>
         <q-item-label header> Projects </q-item-label>
 
@@ -60,20 +69,13 @@
     </q-page-container>
 
     <q-footer reveal elevated class="bg-grey-8 text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-          </q-avatar>
-          <div>Title</div>
-        </q-toolbar-title>
-      </q-toolbar>
+      <q-toolbar class="bg-black text-white"> </q-toolbar>
     </q-footer>
   </q-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'MainLayout',
@@ -89,14 +91,8 @@ export default defineComponent({
           link: 'https://github.com/jackmcguire1',
         },
         {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev',
-        },
-        {
           title: 'Twitter',
-          caption: '@quasarframework',
+          caption: '@crazyjack12',
           icon: 'rss_feed',
           link: 'https://twitter/crazyjack12',
         },
@@ -119,6 +115,18 @@ export default defineComponent({
           caption: 'How-Old-Is',
           icon: 'code',
           link: 'https://github.com/jackmcguire1/how-old-is',
+        },
+      ],
+      pagesList: [
+        {
+          title: 'Home',
+          caption: 'Home',
+          link: '/',
+        },
+        {
+          title: 'About',
+          caption: 'About',
+          link: '/',
         },
       ],
       showNavigation: false,
