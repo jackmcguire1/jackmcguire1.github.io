@@ -63,20 +63,71 @@
         </div>
       </q-list>
     </q-drawer>
-
     <q-page-container>
+      <div v-if="displayGaBanner">
+        <q-banner
+          v-mode="displayGaBanner"
+          inline-actions
+          rounded
+          class="bg-orange text-white"
+        >
+          This site uses cookies from Google to deliver its services and to
+          analyze traffic. Information about your use of this site is shared
+          with Google. By using this site, you agree to its use of cookies.
+
+          <template v-slot:action>
+            <q-btn
+              flat
+              label="Dismiss"
+              @Click="
+                displayGaBanner = !displayGaBanner;
+                dismissGA();
+              "
+            />
+          </template>
+        </q-banner>
+      </div>
       <router-view />
     </q-page-container>
 
-    <q-footer reveal elevated class="bg-grey-8 text-white">
-      <q-toolbar class="bg-black text-white"> </q-toolbar>
+    <q-footer elevated reveal class="bg-grey-8 text-white">
+      <q-toolbar class="bg-white text-black">
+        Jack McGuire - 2022
+        <q-space />
+        <q-btn
+          right
+          flat
+          dense
+          round
+          @click="openURL('https://github.com/jackmcguire1')"
+        >
+          <q-avatar>
+            <q-img src="~assets/github.png" />
+          </q-avatar>
+        </q-btn>
+        <q-separator dark vertical />
+        <q-separator dark vertical />
+        <q-btn right flat dense round @click="openURL('https://twitter.com/crazyjack12')">
+          <q-avatar>
+            <q-img src="~assets/twitter.png" />
+          </q-avatar>
+        </q-btn>
+        <q-separator dark vertical />
+        <q-separator dark vertical />
+        <q-btn right flat dense round @click="openURL('https://linkedin.com/jackmcguire1994')">
+          <q-avatar>
+            <q-img src="~assets/linkedin.png" />
+          </q-avatar>
+        </q-btn>
+      </q-toolbar>
     </q-footer>
   </q-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent} from 'vue';
-
+import { defineComponent } from 'vue';
+import { event } from 'vue-gtag';
+import { openURL } from 'quasar';
 export default defineComponent({
   name: 'MainLayout',
 
@@ -123,19 +174,28 @@ export default defineComponent({
           caption: 'Home',
           link: '/',
         },
-        {
-          title: 'About',
-          caption: 'About',
-          link: '/',
-        },
       ],
       showNavigation: false,
+      displayGaBanner: true,
     };
   },
   methods: {
     displayNavigation: function () {
       this.showNavigation = !this.showNavigation;
+      event('click', {
+        event_category: 'navigation',
+        event_label: 'navigation-btn',
+        value: 'navigation-btn',
+      });
     },
+    dismissGA: function () {
+      event('click', {
+        event_category: 'dismiss',
+        event_label: 'ga-dismiss-btn',
+        value: 'ga-dismiss-btn',
+      });
+    },
+    openURL: openURL,
   },
 });
 </script>
