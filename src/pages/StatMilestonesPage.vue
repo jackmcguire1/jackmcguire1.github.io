@@ -130,6 +130,19 @@
 
             <q-item clickable v-ripple>
               <q-item-section>
+                <q-item-label><li>Project Website</li></q-item-label>
+                <q-item-label caption>
+                  Project website can found
+                  <a
+                    href="https://jackmcguire1.github.io/stat-milestones-website/"
+                    >here</a
+                  ></q-item-label
+                >
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple>
+              <q-item-section>
                 <q-item-label><li>Twitch Extension</li></q-item-label>
                 <q-item-label caption>
                   Twitch Extension can be found
@@ -147,19 +160,6 @@
                 <q-item-label caption>
                   The hackathon submission can be found
                   <a href="https://devpost.com/software/stat-milestones"
-                    >here</a
-                  ></q-item-label
-                >
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
-              <q-item-section>
-                <q-item-label><li>Project Website</li></q-item-label>
-                <q-item-label caption>
-                  Project website can found
-                  <a
-                    href="https://jackmcguire1.github.io/stat-milestones-website/"
                     >here</a
                   ></q-item-label
                 >
@@ -188,7 +188,7 @@
       <div class="fit row wrap justify-center items-start content-center">
         <div class="col-auto">
           <q-img
-            width="250px"
+            width="300px"
             height="100px"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-34bqg_Ake5eGirwdk469inxSS4fXh-ZLHQ&usqp=CAU"
           />
@@ -197,7 +197,7 @@
         <div class="col-1"></div>
 
         <div class="col-auto">
-          <q-img width="200px" height="100px" src="~assets/twitch.jpeg" />
+          <q-img width="300px" height="100px" src="~assets/twitch.jpeg" />
         </div>
       </div>
 
@@ -211,11 +211,7 @@
         <div class="col"></div>
         <div class="col-auto">
           <q-card class="my-card">
-            <q-img
-              height="200px"
-              width="400px"
-              src="https://assets.help.twitch.tv/article/img/000002343-09.png"
-            >
+            <q-img height="200px" width="400px" src="~assets/twitch-goals.png">
               <div class="absolute-bottom text-h6">Track Twitch Stats</div>
             </q-img>
 
@@ -224,51 +220,49 @@
               <li>Followers</li>
               <li>Subscribers</li>
               <li>Goals</li>
-              <li>Charity donations</li>
+              <li>Charity Donations</li>
             </q-card-section>
           </q-card>
         </div>
         <div class="col"></div>
         <div class="col-auto">
           <q-card class="my-card">
-            <q-img
-              height="200px"
-              width="400px"
-              src="https://assets.help.twitch.tv/article/img/000002343-09.png"
-            >
-              <div class="absolute-bottom text-h6">Track Twitch Stats</div>
+            <q-img height="200px" width="400px" src="~assets/discord.png">
+              <div class="absolute-bottom text-h6">Discord Server</div>
             </q-img>
 
             <q-card-section>
-              Track your Twitch <br />
-              <li>Followers</li>
+              Discord messages<br />
+              <li>New Followers</li>
+              <li>Charity Goals</li>
               <li>Subscribers</li>
-              <li>Goals</li>
-              <li>Charity donations</li>
+              <li>Stream Live</li>
             </q-card-section>
           </q-card>
         </div>
         <div class="col"></div>
         <div class="col-auto">
           <q-card class="my-card">
-            <q-img
-              height="200px"
-              width="400px"
-              src="https://assets.help.twitch.tv/article/img/000002343-09.png"
-            >
-              <div class="absolute-bottom text-h6">Track Twitch Stats</div>
+            <q-img height="200px" width="400px" src="~assets/color-wheel.jpeg">
+              <div class="absolute-bottom text-h6">Theme Customization</div>
             </q-img>
 
             <q-card-section>
-              Track your Twitch <br />
-              <li>Followers</li>
-              <li>Subscribers</li>
-              <li>Goals</li>
-              <li>Charity donations</li>
+              Theme Customization <br />
+              <li>Gauge Colors</li>
+              <li>Banners</li>
+              <li>Buttons</li>
+              <li>Misc</li>
             </q-card-section>
           </q-card>
         </div>
         <div class="col"></div>
+      </div>
+
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
       </div>
     </q-page>
 

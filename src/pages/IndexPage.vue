@@ -1,11 +1,22 @@
 <template>
   <div>
     <q-page class="row items-center justify-evenly">
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+
       <q-avatar round size="300px">
-        <q-img src="https://avatars.githubusercontent.com/u/9089342?v=4" />
+        <q-img src="~/assets/jack.jpeg" />
       </q-avatar>
 
-      <q-card class="my-card" flat bordered @mouseover="hoverProfileCard()">
+      <q-card flat bordered @mouseover="hoverProfileCard()">
         <q-item>
           <q-item-section>
             <q-item-label>Jack McGuire</q-item-label>
@@ -77,53 +88,100 @@
               </q-item-section>
             </q-item>
           </q-list>
-
-          <q-separator dark vertical />
-          <q-separator dark vertical />
-
-          <q-list bordered separator>
-            <q-item class="q-my-sm" clickable v-ripple>
-              <q-item-section>
-                <q-item-label>SKILLS</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
-              <q-item-section>
-                <q-item-label><li>GO</li></q-item-label>
-                <q-item-label caption>Golang</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
-              <q-item-section>
-                <q-item-label><li>Javascript</li></q-item-label>
-                <q-item-label caption>TypeScript</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
-              <q-item-section>
-                <q-item-label><li>AWS</li></q-item-label>
-                <q-item-label caption>[A]mazon [W]eb [S]ervices</q-item-label>
-              </q-item-section>
-            </q-item>
-          </q-list>
         </q-card-section>
       </q-card>
+
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+
+      <div class="fit row wrap justify-center items-start content-center">
+        <div class="col-auto">
+          <h3>#PROJECTS</h3>
+        </div>
+      </div>
+
+      <div class="fit row wrap justify-start items-center content-center">
+        <div class="col"></div>
+        <div class="col-auto">
+            <q-card class="my-card" @click="openURL('/stat-milestones')">
+              <q-img
+                height="200px"
+                width="400px"
+                src="~/assets/twitch-extensions.png"
+              >
+                <div class="absolute-bottom text-h6">Twitch Extension</div>
+              </q-img>
+
+              <q-card-section>
+                Stat-Milestones <br />
+                <li>Go</li>
+                <li>Vue</li>
+                <li>Twitch</li>
+                <li>AWS</li>
+              </q-card-section>
+            </q-card>
+        </div>
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('https://dev.to/jackmcguire1/wheel-of-fortune-3521')">
+            <q-img
+              height="200px"
+              width="400px"
+              src="~/assets/wheel-of-fortune.jpeg"
+            >
+              <div class="absolute-bottom text-h6">REDIS Hackathon</div>
+            </q-img>
+
+            <q-card-section>
+              Wheel Of Fortune<br />
+              <li>Redis</li>
+              <li>Go</li>
+              <li>Vue</li>
+              <li>Envoy</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('https://github.com/jackmcguire1/how-old-is')">
+            <q-img height="200px" width="400px" src="~/assets/alexa.png">
+              <div class="absolute-bottom text-h6">Alexa Skill</div>
+            </q-img>
+
+            <q-card-section>
+              How-Old-Is <br />
+              <li>GO</li>
+              <li>AWS Lambda</li>
+              <li>AWS SAM</li>
+              <li>Alexa</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
     </q-page>
+
     <q-separator dark />
     <q-page>
       <q-separator dark />
       <div class="fit row wrap justify-center items-start content-center">
         <div class="col-auto">
           <q-timeline color="secondary">
-            <q-timeline-entry heading body="Work History" />
+            <q-timeline-entry heading body="#CAREER" />
 
             <q-timeline-entry
               title="Staff Engineer"
               subtitle="February 26, 2022"
-              body="Staff Engineer"
+              body="Green Man Gaming"
               color="green"
             />
 
@@ -185,10 +243,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { event } from 'vue-gtag';
+import { openURL } from 'quasar';
 
 export default defineComponent({
   name: 'IndexPage',
   components: {},
+  data() {
+    return {
+      shadow: false,
+    };
+  },
   methods: {
     hoverProfileCard: function () {
       event('hover', {
@@ -197,6 +261,18 @@ export default defineComponent({
         value: 'profile-card',
       });
     },
+    applyShadow: function () {
+      this.shadow = !this.shadow;
+      if (!this.shadow) {
+      }
+    },
+    openURL: openURL,
   },
 });
 </script>
+
+<style>
+.my-card:hover {
+  background-color: #e8e8e8;
+}
+</style>

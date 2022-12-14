@@ -21,7 +21,7 @@
         <q-item-label header> Pages </q-item-label>
 
         <div v-for="link in pagesList" :key="link.title">
-          <q-item clickable tag="a" target="_blank" :href="link.link">
+          <q-item clickable tag="a" :href="link.link">
             <q-item-section>
               <q-item-label>{{ link.title }}</q-item-label>
             </q-item-section>
@@ -33,7 +33,7 @@
         <q-item-label header> Projects </q-item-label>
 
         <div v-for="link in projectsList" :key="link.title">
-          <q-item clickable tag="a" target="_blank" :href="link.link">
+          <q-item clickable tag="a" :target="link.target" :href="link.link">
             <q-item-section v-if="link.icon" avatar>
               <q-icon :name="link.icon" />
             </q-item-section>
@@ -150,22 +150,25 @@ export default defineComponent({
       ],
       projectsList: [
         {
-          title: 'Stat-Milestones',
-          caption: 'Twitch Extension',
+          title: 'Twitch Extension',
+          caption: 'Stat-Milestones',
           icon: 'code',
           link: '/stat-milestones',
+          target: '',
         },
         {
           title: 'REDIS hackathon 2022',
           caption: 'dev.to REDIS hackathon 2022',
           icon: 'code',
           link: 'https://dev.to/jackmcguire1/wheel-of-fortune-3521',
+          target: '_blank',
         },
         {
           title: 'Alexa Skill',
           caption: 'How-Old-Is',
           icon: 'code',
           link: 'https://github.com/jackmcguire1/how-old-is',
+          target: '_blank',
         },
       ],
       pagesList: [
