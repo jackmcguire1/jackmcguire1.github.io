@@ -179,11 +179,17 @@
         </div>
       </div>
 
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+
       <div class="fit row wrap justify-center items-start content-center">
         <div class="col-auto">
           <q-img
-            width="500px"
-            height="300px"
+            width="250px"
+            height="100px"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-34bqg_Ake5eGirwdk469inxSS4fXh-ZLHQ&usqp=CAU"
           />
         </div>
@@ -191,11 +197,7 @@
         <div class="col-1"></div>
 
         <div class="col-auto">
-          <q-img
-            width="500px"
-            height="300px"
-            src="https://www.vectorlogo.zone/logos/twitch/twitch-official.svg"
-          />
+          <q-img width="200px" height="100px" src="~assets/twitch.jpeg" />
         </div>
       </div>
 
@@ -206,93 +208,67 @@
       </div>
 
       <div class="fit row wrap justify-start items-center content-center">
-        <div class="col">
+        <div class="col"></div>
+        <div class="col-auto">
           <q-card class="my-card">
             <q-img
-              width="350px"
               height="200px"
-              src="https://jackmcguire1.github.io/stat-milestones-website/assets/heart.71c1d60f.png"
-            >
-              <div class="absolute-bottom text-h6">Twitch Followers</div>
-            </q-img>
-
-            <q-card-section> Track your Twitch Followers </q-card-section>
-          </q-card>
-        </div>
-
-        <div class="col">
-          <q-card class="my-card">
-            <q-img
-              width="350px"
-              height="200px"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPBeqOFWJWBdPFtR1CNOmWkKtxN78EAi3cg&usqp=CAU"
-            >
-              <div class="absolute-bottom text-h6">Twitch Subscribers</div>
-            </q-img>
-
-            <q-card-section> Track your Twitch Subscribers </q-card-section>
-          </q-card>
-        </div>
-
-        <div class="col">
-          <q-card class="my-card">
-            <q-img
-              width="350px"
-              height="200px"
+              width="400px"
               src="https://assets.help.twitch.tv/article/img/000002343-09.png"
             >
-              <div class="absolute-bottom text-h6">Twitch Goals</div>
+              <div class="absolute-bottom text-h6">Track Twitch Stats</div>
             </q-img>
 
-            <q-card-section> Track your Twitch Goals </q-card-section>
-          </q-card>
-        </div>
-      </div>
-
-      <div class="fit row wrap justify-start items-center content-center">
-        <div class="col">
-          <q-card class="my-card">
-            <q-img
-              width="350px"
-              height="200px"
-              src="https://images.squarespace-cdn.com/content/v1/51d98be2e4b05a25fc200cbc/1586813334571-EBOC6YFDK0B72Y9IL4SD/Twitch+Charity+Symbol.jpg?format=1000w"
-            >
-              <div class="absolute-bottom text-h6">Twitch Charity</div>
-            </q-img>
-
-            <q-card-section> Track your Twitch Charity </q-card-section>
-          </q-card>
-        </div>
-
-        <div class="col">
-          <q-card class="my-card">
-            <q-img
-              width="350px"
-              height="200px"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHCInNEVapTPFzGqDEHgvFno7wfnzt-LC5Pg&usqp=CAU"
-            >
-              <div class="absolute-bottom text-h6">Theme customization</div>
-            </q-img>
-
-            <q-card-section
-              >Personalize the look of Stat-Milestones
+            <q-card-section>
+              Track your Twitch <br />
+              <li>Followers</li>
+              <li>Subscribers</li>
+              <li>Goals</li>
+              <li>Charity donations</li>
             </q-card-section>
           </q-card>
         </div>
-
-        <div class="col">
+        <div class="col"></div>
+        <div class="col-auto">
           <q-card class="my-card">
             <q-img
-              width="350px"
               height="200px"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOKWEyB8m_BSOlKCG1aOz9c2IcNnPxwSaIg&usqp=CAU"
+              width="400px"
+              src="https://assets.help.twitch.tv/article/img/000002343-09.png"
             >
-              <div class="absolute-bottom text-h6">Custom Milestones</div>
+              <div class="absolute-bottom text-h6">Track Twitch Stats</div>
             </q-img>
 
-            <q-card-section>Track a custom milestone</q-card-section>
+            <q-card-section>
+              Track your Twitch <br />
+              <li>Followers</li>
+              <li>Subscribers</li>
+              <li>Goals</li>
+              <li>Charity donations</li>
+            </q-card-section>
           </q-card>
         </div>
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card class="my-card">
+            <q-img
+              height="200px"
+              width="400px"
+              src="https://assets.help.twitch.tv/article/img/000002343-09.png"
+            >
+              <div class="absolute-bottom text-h6">Track Twitch Stats</div>
+            </q-img>
+
+            <q-card-section>
+              Track your Twitch <br />
+              <li>Followers</li>
+              <li>Subscribers</li>
+              <li>Goals</li>
+              <li>Charity donations</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
       </div>
     </q-page>
 
