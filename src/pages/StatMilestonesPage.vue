@@ -268,9 +268,10 @@
 
     <q-page class="row items-center justify-center">
       <div class="fit row wrap justify-center items-start content-center">
+        <div class="col-1"></div>
         <div class="col-auto">
           <q-timeline color="secondary">
-            <q-timeline-entry heading body="Development Timeline" />
+            <q-timeline-entry heading body="#Development" />
 
             <q-timeline-entry
               title="VUE 3 - upgrade"

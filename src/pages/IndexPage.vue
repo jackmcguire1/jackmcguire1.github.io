@@ -106,7 +106,10 @@
       <div class="fit row wrap justify-start items-center content-center">
         <div class="col"></div>
         <div class="col-auto">
-          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('/stat-milestones')">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('/stat-milestones')"
+          >
             <q-img
               height="200px"
               width="400px"
@@ -178,12 +181,14 @@
       </div>
     </q-page>
 
-    <q-separator dark />
-    <q-page>
-      <q-separator dark />
+    <q-page class="row items-center justify-center">
       <div class="fit row wrap justify-center items-start content-center">
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
         <div class="col-auto">
-          <q-timeline color="secondary">
+          <q-timeline responsive class="content-center" color="secondary">
             <q-timeline-entry heading body="#CAREER" />
 
             <q-timeline-entry
@@ -255,9 +260,9 @@
               body="Bromley College Of Further And Higher Education"
               color="pink"
             />
-
           </q-timeline>
         </div>
+        <div class="col-1"></div>
       </div>
     </q-page>
   </div>
