@@ -1,1 +1,0 @@
-import{b as r}from"./index.cac4b0f0.js";import{i as o}from"./vue-gtag.esm.77fba2b7.js";var s=r(async({app:a,router:e,store:i})=>{a.use(o,{config:{id:"G-35F4WN4VX7",appName:"portfolio-website",pageTrackerScreenviewEnabled:!0,params:{anonymize_ip:!0}}},e)});export{s as default};

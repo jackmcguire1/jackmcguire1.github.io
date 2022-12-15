@@ -26,7 +26,7 @@
             />
             <q-carousel-slide
               :name="2"
-              img-src="https://jackmcguire1.github.io/stat-milestones-website/assets/achievedfollowers.d1d2a44c.png"
+              img-src="https://extensions-discovery-images.twitch.tv/e93cf8730nd11z7gepkly2gry5kv8k/0.0.3/screenshot78d8365f-d016-48ea-9186-f4f1a72432a5"
             />
             <q-carousel-slide
               :name="3"

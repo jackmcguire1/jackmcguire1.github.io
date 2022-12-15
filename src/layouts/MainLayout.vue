@@ -114,7 +114,7 @@
         </q-btn>
         <q-separator dark vertical />
         <q-separator dark vertical />
-        <q-btn right flat dense round @click="openURL('https://linkedin.com/jackmcguire1994')">
+        <q-btn right flat dense round @click="openURL('https://www.linkedin.com/in/jackmcguire1994/')">
           <q-avatar>
             <q-img src="~assets/linkedin.png" />
           </q-avatar>

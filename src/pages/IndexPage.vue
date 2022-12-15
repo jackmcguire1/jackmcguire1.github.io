@@ -106,27 +106,32 @@
       <div class="fit row wrap justify-start items-center content-center">
         <div class="col"></div>
         <div class="col-auto">
-            <q-card class="my-card" @click="openURL('/stat-milestones')">
-              <q-img
-                height="200px"
-                width="400px"
-                src="~/assets/twitch-extensions.png"
-              >
-                <div class="absolute-bottom text-h6">Twitch Extension</div>
-              </q-img>
+          <q-card class="my-card" @click="openURL('/stat-milestones')">
+            <q-img
+              height="200px"
+              width="400px"
+              src="~/assets/twitch-extensions.png"
+            >
+              <div class="absolute-bottom text-h6">Twitch Extension</div>
+            </q-img>
 
-              <q-card-section>
-                Stat-Milestones <br />
-                <li>Go</li>
-                <li>Vue</li>
-                <li>Twitch</li>
-                <li>AWS</li>
-              </q-card-section>
-            </q-card>
+            <q-card-section>
+              Stat-Milestones <br />
+              <li>Go</li>
+              <li>Vue</li>
+              <li>Twitch</li>
+              <li>AWS</li>
+            </q-card-section>
+          </q-card>
         </div>
         <div class="col"></div>
         <div class="col-auto">
-          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('https://dev.to/jackmcguire1/wheel-of-fortune-3521')">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="
+              openURL('https://dev.to/jackmcguire1/wheel-of-fortune-3521')
+            "
+          >
             <q-img
               height="200px"
               width="400px"
@@ -146,7 +151,10 @@
         </div>
         <div class="col"></div>
         <div class="col-auto">
-          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('https://github.com/jackmcguire1/how-old-is')">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('https://github.com/jackmcguire1/how-old-is')"
+          >
             <q-img height="200px" width="400px" src="~/assets/alexa.png">
               <div class="absolute-bottom text-h6">Alexa Skill</div>
             </q-img>
@@ -221,8 +229,8 @@
             />
 
             <q-timeline-entry
-              title="Graduated University"
-              subtitle="May 10, 2021"
+              title="Graduated Computer Science - Bsc Hons"
+              subtitle="May 10, 2016"
               body="University Of Derby"
               color="orange"
             />
@@ -233,6 +241,21 @@
               body="EssDocs"
               color="blue"
             />
+
+            <q-timeline-entry
+              title="Started - Computer Science - Bsc Hons"
+              subtitle="September 14, 2012"
+              body="University Of Derby"
+              color="orange"
+            />
+
+            <q-timeline-entry
+              title="BTEC National Extended Diploma Level 3 - Software Engineering"
+              subtitle="September 10, 2010"
+              body="Bromley College Of Further And Higher Education"
+              color="pink"
+            />
+
           </q-timeline>
         </div>
       </div>
