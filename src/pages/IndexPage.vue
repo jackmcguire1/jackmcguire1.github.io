@@ -106,7 +106,7 @@
       <div class="fit row wrap justify-start items-center content-center">
         <div class="col"></div>
         <div class="col-auto">
-          <q-card class="my-card" @click="openURL('/stat-milestones')">
+          <q-card class="my-card q-hoverable cursor-pointer" @click="openURL('/stat-milestones')">
             <q-img
               height="200px"
               width="400px"
