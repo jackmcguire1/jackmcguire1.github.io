@@ -145,8 +145,8 @@
 
             <q-card-section>
               Wheel Of Fortune<br />
-              <li>Redis</li>
               <li>Go</li>
+              <li>Redis</li>
               <li>Vue</li>
               <li>Envoy</li>
             </q-card-section>
@@ -164,7 +164,7 @@
 
             <q-card-section>
               How-Old-Is <br />
-              <li>GO</li>
+              <li>Go</li>
               <li>AWS Lambda</li>
               <li>AWS SAM</li>
               <li>Alexa</li>
@@ -179,6 +179,57 @@
           <q-item></q-item>
         </div>
       </div>
+
+      <div class="fit row wrap justify-center items-start content-center">
+        <div class="col-auto">
+          <h3>#SKILLS</h3>
+        </div>
+      </div>
+
+      <vue-word-cloud
+        style="height: 480px; width: 640px"
+        :words="[
+          ['AWS', random(1, 26)],
+          ['Azure', random(1, 26)],
+          ['GCP', random(1, 26)],
+          ['Kubernetes', random(1, 26)],
+          ['Docker', random(1, 26)],
+          ['Serverless', random(1, 26)],
+          ['Cloud Native', random(1, 26)],
+          ['Microservices', random(1, 26)],
+          ['SaaS', random(1, 26)],
+          ['JavaScript', random(1, 26)],
+          ['HTML', random(1, 26)],
+          ['CSS', random(1, 26)],
+          ['React', random(1, 26)],
+          ['Java', random(1, 26)],
+          ['Angular', random(1, 26)],
+          ['Vue.js', random(1, 26)],
+          ['Node.js', random(1, 26)],
+          ['GraphQL', random(1, 26)],
+          ['GO', random(1, 26)],
+          ['C#', random(1, 26)],
+          ['scala', random(1, 26)],
+          ['REST', random(1, 26)],
+          ['Webpack', random(1, 26)],
+          ['Spring Boot', random(1, 26)],
+          ['Spring MVC', random(1, 26)],
+          ['TypeScript', random(1, 26)],
+          ['.NET Core', random(1, 26)],
+          ['#Web3', random(1, 26)],
+          ['Data warehouse', random(1, 26)],
+          ['E-commerce', random(1, 26)],
+        ]"
+        :color="
+          ([, weight]) =>
+            weight > 20
+              ? colours[random(-1, 7)]
+              : weight > colours[random(-1, 7)]
+              ? colours[random(-1, 7)]
+              : colours[random(-1, 7)]
+        "
+        font-family="Roboto"
+      />
     </q-page>
 
     <q-page class="row items-center justify-center">
@@ -279,6 +330,15 @@ export default defineComponent({
   data() {
     return {
       shadow: false,
+      colours: [
+        'DarkSlateBlue',
+        'Silver',
+        'Khaki',
+        'Crimson',
+        'BlueViolet',
+        'MediumVioletRed',
+        'DarkOrange',
+      ],
     };
   },
   methods: {
@@ -293,6 +353,11 @@ export default defineComponent({
       this.shadow = !this.shadow;
       if (!this.shadow) {
       }
+    },
+    random: function (max, min) {
+      let x = Math.floor(Math.random() * (max - min + 1) + min);
+      console.log(x);
+      return x;
     },
     openURL: openURL,
   },

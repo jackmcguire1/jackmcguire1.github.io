@@ -145,7 +145,13 @@ export default defineComponent({
           title: 'Twitter',
           caption: '@crazyjack12',
           icon: 'rss_feed',
-          link: 'https://twitter/crazyjack12',
+          link: 'https://twitter.com/crazyjack12',
+        },
+        {
+          title: 'LinkedIN',
+          caption: '@crazyjack12',
+          icon: 'rss_feed',
+          link: 'https://www.linkedin.com/in/jackmcguire1994/',
         },
       ],
       projectsList: [
