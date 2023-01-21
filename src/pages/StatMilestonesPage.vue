@@ -274,6 +274,13 @@
             <q-timeline-entry heading body="#Development" />
 
             <q-timeline-entry
+              title="DarkMode - ☀️🌙"
+              subtitle="January 21, 2023"
+              body="Support for DarkMode"
+              color="purple"
+            />
+
+            <q-timeline-entry
               title="VUE 3 - upgrade"
               subtitle="November 16, 2022"
               body="Upgraded project to utilise Vue 3"
