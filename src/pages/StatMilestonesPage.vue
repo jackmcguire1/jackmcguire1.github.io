@@ -289,7 +289,7 @@
 
             <q-timeline-entry
               title="Discord Server"
-              subtitle="July 7, 2022"
+              subtitle="October 7, 2022"
               body="Created a Stat-Milestones Discord server for help and support!"
               color="dark"
             />
