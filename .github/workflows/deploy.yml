@@ -43,7 +43,10 @@ jobs:
 
       - name: Quasar Build
         run: npx quasar build
-        
+
+      - name: create stat-milestones page
+        run: cp ./dist/spa/index.html ./dist/spa/stat-milestones.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
