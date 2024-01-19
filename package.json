@@ -1,6 +1,6 @@
 {
-  "name": "quasar-project",
-  "version": "0.0.1",
+  "name": "portfolio",
+  "version": "0.0.2",
   "description": "personal portfolio website",
   "productName": "portfolio",
   "author": "Jack McGuire <jackmcguire35@gmail.com>",
@@ -11,24 +11,24 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.15.11",
-    "quasar": "^2.11.7",
-    "vue": "^3.2.47",
+    "@quasar/extras": "^1.16.9",
+    "quasar": "^2.14.2",
+    "vue": "^3.4.15",
     "vue-gtag": "^2.0.1",
-    "vue-router": "^4.1.6",
+    "vue-router": "^4.2.5",
     "vuewordcloud": "github:SeregPie/VueWordCloud"
   },
   "devDependencies": {
-    "@quasar/app-vite": "^1.2.1",
+    "@quasar/app-vite": "^1.7.3",
     "@types/node": "^18.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.54.0",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-vue": "^9.9.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": "^18 || ^16 || ^14.19",
