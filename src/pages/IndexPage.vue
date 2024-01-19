@@ -231,7 +231,7 @@
             class="my-card q-hoverable cursor-pointer"
             @click="openURL('https://stat-milestones.dev')"
           >
-            <q-img height="200px" width="400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1wUf2-CruIVRc_Lc5tZV8ZyZR8qeItFdkHQ&usqp=CAU">
+            <q-img height="200px" width="400px" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/000/771/851/datas/medium.png">
               <div class="absolute-bottom text-h6">Landing Page</div>
             </q-img>
 
