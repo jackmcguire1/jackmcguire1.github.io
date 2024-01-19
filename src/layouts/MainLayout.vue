@@ -92,7 +92,7 @@
 
     <q-footer elevated reveal class="bg-grey-8 text-white">
       <q-toolbar class="bg-white text-black">
-        Jack McGuire - 2022
+        Jack McGuire - 2024
         <q-space />
         <q-btn
           right
@@ -163,17 +163,38 @@ export default defineComponent({
           target: '',
         },
         {
-          title: 'REDIS hackathon 2022',
-          caption: 'dev.to REDIS hackathon 2022',
+          title: 'Redis hackathon',
+          caption: 'Wheel of Fortune',
           icon: 'code',
           link: 'https://dev.to/jackmcguire1/wheel-of-fortune-3521',
           target: '_blank',
         },
         {
           title: 'Alexa Skill',
-          caption: 'How-Old-Is',
+          caption: 'Alexa-ChatGPT',
           icon: 'code',
-          link: 'https://github.com/jackmcguire1/how-old-is',
+          link: 'https://github.com/jackmcguire1/alexa-chatgpt',
+          target: '_blank',
+        },
+        {
+          title: 'Riot Hackathon',
+          caption: 'Riot Global Rankings',
+          icon: 'code',
+          link: 'https://devpost.com/software/riot-rankings',
+          target: '_blank',
+        },
+        {
+          title: 'User Microservice',
+          caption: 'User Microservice',
+          icon: 'code',
+          link: 'https://github.com/jackmcguire1/UserService',
+          target: '_blank',
+        },
+        {
+          title: 'Landing Page',
+          caption: 'stat-milestones landing page',
+          icon: 'code',
+          link: 'https://stat-milestones.dev',
           target: '_blank',
         },
       ],

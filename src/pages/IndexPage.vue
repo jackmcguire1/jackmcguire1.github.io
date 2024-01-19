@@ -156,18 +156,91 @@
         <div class="col-auto">
           <q-card
             class="my-card q-hoverable cursor-pointer"
-            @click="openURL('https://github.com/jackmcguire1/how-old-is')"
+            @click="openURL('https://github.com/jackmcguire1/alexa-chatgpt')"
           >
             <q-img height="200px" width="400px" src="~/assets/alexa.png">
               <div class="absolute-bottom text-h6">Alexa Skill</div>
             </q-img>
 
             <q-card-section>
-              How-Old-Is <br />
+              ChatGPT <br />
               <li>Go</li>
-              <li>AWS Lambda</li>
-              <li>AWS SAM</li>
-              <li>Alexa</li>
+              <li>AWS</li>
+              <li>OpenAI Chatgpt 3.5+</li>
+              <li>Google Gemini Model</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+
+      <div class="fit row wrap justify-start items-center content-center">
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('https://github.com/jackmcguire1/UserService')"
+          >
+            <q-img
+              height="200px"
+              width="400px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq7NhS34vHRoyhJB5SwOcs5OA6Y3xlaj6OA&usqp=CAU"
+            >
+              <div class="absolute-bottom text-h6">User Microservice</div>
+            </q-img>
+
+            <q-card-section>
+              User Microservice<br />
+              <li>Go</li>
+              <li>Docker</li>
+              <li>MongoDB</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('https://devpost.com/software/riot-rankings')"
+          >
+            <q-img
+              height="200px"
+              width="400px"
+              src="https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif"
+            >
+              <div class="absolute-bottom text-h6">Riot Global Rankings Hackathon</div>
+            </q-img>
+
+            <q-card-section>
+              Riot Global Rankings<br />
+              <li>Go</li>
+              <li>AWS</li>
+              <li>MongoDB</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('https://stat-milestones.dev')"
+          >
+            <q-img height="200px" width="400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1wUf2-CruIVRc_Lc5tZV8ZyZR8qeItFdkHQ&usqp=CAU">
+              <div class="absolute-bottom text-h6">Landing Page</div>
+            </q-img>
+
+            <q-card-section>
+              Stat-Milestones Landing Page <br />
+              <li>Vuetify</li>
+              <li>Github Pages</li>
+              <li>AWS / MongoDB</li>
+              <li>Cloudflare</li>
             </q-card-section>
           </q-card>
         </div>
@@ -196,6 +269,8 @@
           ['Docker', random(1, 26)],
           ['Serverless', random(1, 26)],
           ['Cloud Native', random(1, 26)],
+          ['Cloudflare', random(1, 26)],
+          ['DNS', random(1, 26)],
           ['Microservices', random(1, 26)],
           ['SaaS', random(1, 26)],
           ['JavaScript', random(1, 26)],
@@ -209,7 +284,8 @@
           ['GraphQL', random(1, 26)],
           ['GO', random(1, 26)],
           ['C#', random(1, 26)],
-          ['scala', random(1, 26)],
+          ['Scala', random(1, 26)],
+          ['Python', random(1, 26)],
           ['REST', random(1, 26)],
           ['Webpack', random(1, 26)],
           ['Spring Boot', random(1, 26)],
@@ -225,8 +301,8 @@
             weight > 20
               ? colours[random(-1, 7)]
               : weight > colours[random(-1, 7)]
-              ? colours[random(-1, 7)]
-              : colours[random(-1, 7)]
+                ? colours[random(-1, 7)]
+                : colours[random(-1, 7)]
         "
         font-family="Roboto"
       />
