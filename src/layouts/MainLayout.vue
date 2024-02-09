@@ -137,7 +137,7 @@ export default defineComponent({
       linksList: [
         {
           title: 'Github',
-          caption: 'Github Profile',
+          caption: '@jackmcguire1',
           icon: 'code',
           link: 'https://github.com/jackmcguire1',
         },
