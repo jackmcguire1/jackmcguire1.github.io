@@ -149,7 +149,7 @@ export default defineComponent({
         },
         {
           title: 'LinkedIN',
-          caption: '@crazyjack12',
+          caption: '@jackmcguire1994',
           icon: 'rss_feed',
           link: 'https://www.linkedin.com/in/jackmcguire1994/',
         },
