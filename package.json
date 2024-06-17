@@ -15,7 +15,7 @@
     "quasar": "^2.16.4",
     "vue": "^3.4.27",
     "vue-gtag": "^2.0.1",
-    "vue-router": "^4.3.2",
+    "vue-router": "^4.3.3",
     "vuewordcloud": "github:SeregPie/VueWordCloud"
   },
   "devDependencies": {
