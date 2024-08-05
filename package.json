@@ -13,7 +13,7 @@
   "dependencies": {
     "@quasar/extras": "^1.16.11",
     "quasar": "^2.16.4",
-    "vue": "^3.4.27",
+    "vue": "^3.4.35",
     "vue-gtag": "^2.0.1",
     "vue-router": "^4.3.2",
     "vuewordcloud": "github:SeregPie/VueWordCloud"
