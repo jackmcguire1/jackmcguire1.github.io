@@ -156,6 +156,13 @@ export default defineComponent({
       ],
       projectsList: [
         {
+          title: 'Discord Publisher',
+          caption: 'Discord Embed Message Builder',
+          icon: 'chat',
+          link: 'https://jackmcguire1.github.io/Discord-Publisher/',
+          target: '_blank',
+        },
+        {
           title: 'Twitch Extension',
           caption: 'Stat-Milestones',
           icon: 'code',

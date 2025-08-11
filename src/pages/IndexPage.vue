@@ -253,6 +253,37 @@
         </div>
       </div>
 
+      <div class="fit row wrap justify-start items-center content-center">
+        <div class="col"></div>
+        <div class="col-auto">
+          <q-card
+            class="my-card q-hoverable cursor-pointer"
+            @click="openURL('https://jackmcguire1.github.io/Discord-Publisher/')"
+          >
+            <q-img
+              height="200px"
+              width="400px"
+              src="~/assets/discord.png"
+            >
+              <div class="absolute-bottom text-h6">Discord Embed Message Builder</div>
+            </q-img>
+
+            <q-card-section>
+              Discord Embed Message Builder <br />
+              <li>React</li>
+              <li>Discord API</li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="fit row justify-center items-start content-center">
+        <div class="col">
+          <q-item></q-item>
+        </div>
+      </div>
+
       <div class="fit row wrap justify-center items-start content-center">
         <div class="col-auto">
           <h3>#SKILLS</h3>
