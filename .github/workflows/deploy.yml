@@ -92,17 +92,3 @@ jobs:
         run: |
           echo "✅ Successfully deployed to ${{ steps.deployment.outputs.page_url }}"
           echo "Deployment reason: ${{ github.event.inputs.reason || 'Automatic deployment from push' }}"
-
-  notify:
-    name: Deployment Notification
-    runs-on: ubuntu-latest
-    needs: deploy
-    if: always()
-    steps:
-      - name: Send deployment status
-        run: |
-          if [ "${{ needs.deploy.result }}" == "success" ]; then
-            echo "🎉 Deployment successful!"
-          else
-            echo "❌ Deployment failed!"
-          fi
