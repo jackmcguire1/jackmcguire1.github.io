@@ -15,6 +15,14 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  build: {
+    rollupOptions: {
+      input: {
+        'main': fileURLToPath(new URL('index.html', import.meta.url)),
+        'stat-milestones': fileURLToPath(new URL('stat-milestones.html', import.meta.url)),
+      },
+    },
+  },
   plugins: [
     VueRouter({
       dts: 'src/typed-router.d.ts',

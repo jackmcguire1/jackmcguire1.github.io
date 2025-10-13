@@ -91,6 +91,12 @@
 
 <script setup lang="ts">
 
+  import alexaImg from '@/assets/alexa.png'
+  import discordImg from '@/assets/discord.png'
+  // Import images
+  import twitchExtensionsImg from '@/assets/twitch-extensions.png'
+  import wheelOfFortuneImg from '@/assets/wheel-of-fortune.jpeg'
+
   interface Project {
     title: string
     type: string
@@ -105,7 +111,7 @@
       title: 'Stat-Milestones',
       type: 'Twitch Extension',
       description: 'Interactive Twitch extension for tracking streamer milestones and statistics',
-      image: '/src/assets/twitch-extensions.png',
+      image: twitchExtensionsImg,
       link: '/stat-milestones',
       technologies: ['Go', 'Vue', 'Twitch', 'AWS'],
     },
@@ -113,7 +119,7 @@
       title: 'Wheel Of Fortune',
       type: 'REDIS Hackathon',
       description: 'Real-time multiplayer wheel of fortune game built for Redis hackathon',
-      image: '/src/assets/wheel-of-fortune.jpeg',
+      image: wheelOfFortuneImg,
       link: 'https://dev.to/jackmcguire1/wheel-of-fortune-3521',
       technologies: ['Go', 'Redis', 'Vue', 'Envoy'],
     },
@@ -121,7 +127,7 @@
       title: 'ChatGPT Alexa Skill',
       type: 'Alexa Skill',
       description: 'Voice-powered AI assistant integrating ChatGPT with Amazon Alexa',
-      image: '/src/assets/alexa.png',
+      image: alexaImg,
       link: 'https://github.com/jackmcguire1/alexa-chatgpt',
       technologies: ['Go', 'AWS', 'OpenAI ChatGPT 3.5+', 'Google Gemini'],
     },
@@ -153,7 +159,7 @@
       title: 'Discord Embed Builder',
       type: 'Developer Tool',
       description: 'Visual tool for creating and previewing Discord embed messages',
-      image: '/src/assets/discord.png',
+      image: discordImg,
       link: 'https://jackmcguire1.github.io/Discord-Publisher/',
       technologies: ['React', 'Discord API'],
     },

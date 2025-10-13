@@ -16,7 +16,7 @@
             class="align-end"
             cover
             height="400"
-            src="/src/assets/twitch-extensions.png"
+            :src="twitchExtensionsImg"
           >
             <v-card-title class="text-white bg-gradient text-h3">
               Stat Milestones
@@ -96,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-// Page specific logic if needed
+  import twitchExtensionsImg from '@/assets/twitch-extensions.png'
 </script>
 
 <style scoped>
