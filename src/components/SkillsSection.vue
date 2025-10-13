@@ -108,7 +108,7 @@
 
   function getRandomSize (): 'x-small' | 'small' | 'default' | 'large' | 'x-large' {
     const sizes: ('x-small' | 'small' | 'default' | 'large' | 'x-large')[] = ['small', 'default', 'large', 'x-large']
-    return sizes[Math.floor(Math.random() * sizes.length)]
+    return sizes[Math.floor(Math.random() * sizes.length)] as 'x-small' | 'small' | 'default' | 'large' | 'x-large'
   }
 
   function getRandomColor (): string {
@@ -117,7 +117,7 @@
       'green', 'lime', 'amber', 'orange', 'deep-orange',
       'pink', 'purple',
     ]
-    return colors[Math.floor(Math.random() * colors.length)]
+    return colors[Math.floor(Math.random() * colors.length)] as string
   }
 
   const allSkills: Skill[] = [
