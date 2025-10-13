@@ -1,12 +1,65 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      time: "09:00"
+      timezone: "Europe/London"
+    # Raise pull requests for npm dependencies
+    open-pull-requests-limit: 10
+    # Specify labels for npm pull requests
+    labels:
+      - "dependencies"
+      - "npm"
+    # Allow both direct and indirect (transitive) dependency updates
+    allow:
+      - dependency-type: "all"
+    # Automatically merge minor and patch updates
+    versioning-strategy: increase
+    # Group updates to reduce PR noise
+    groups:
+      vuetify:
+        patterns:
+          - "vuetify*"
+          - "@mdi/*"
+      vue-core:
+        patterns:
+          - "vue"
+          - "vue-*"
+          - "@vue/*"
+      vite:
+        patterns:
+          - "vite*"
+          - "@vitejs/*"
+      typescript:
+        patterns:
+          - "typescript"
+          - "@types/*"
+          - "vue-tsc"
+      eslint:
+        patterns:
+          - "eslint*"
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
 
+  # Enable version updates for GitHub Actions
   - package-ecosystem: "github-actions"
+    # Workflow files stored in the `.github/workflows` directory
     directory: "/"
     schedule:
-      # Check for updates to GitHub Actions every week
-      interval: "monthly"
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/London"
+    # Specify labels for GitHub Actions pull requests
+    labels:
+      - "dependencies"
+      - "github-actions"
+    open-pull-requests-limit: 5

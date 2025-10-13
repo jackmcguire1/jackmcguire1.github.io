@@ -1,37 +1,41 @@
 {
   "name": "portfolio",
-  "version": "0.0.2",
-  "description": "personal portfolio website",
-  "productName": "portfolio",
-  "author": "Jack McGuire <jackmcguire35@gmail.com>",
   "private": true,
+  "type": "module",
+  "version": "0.0.0",
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.vue ./",
-    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0"
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.16",
-    "quasar": "^2.16.4",
-    "vue": "^3.5.3",
-    "vue-gtag": "^2.0.1",
-    "vue-router": "^4.4.3",
-    "vuewordcloud": "github:SeregPie/VueWordCloud"
+    "@fontsource/roboto": "5.2.7",
+    "@mdi/font": "7.4.47",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.10.1"
   },
   "devDependencies": {
-    "@quasar/app-vite": "^1.9.3",
-    "@types/node": "^22.13.0",
-    "@typescript-eslint/eslint-plugin": "^7.12.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.7.3"
-  },
-  "engines": {
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "eslint": "^9.35.0",
+    "eslint-config-vuetify": "^4.2.0",
+    "npm-run-all2": "^8.0.4",
+    "sass-embedded": "^1.92.1",
+    "typescript": "~5.9.2",
+    "unplugin-auto-import": "^20.1.0",
+    "unplugin-fonts": "^1.4.0",
+    "unplugin-vue-components": "^29.0.0",
+    "unplugin-vue-router": "^0.15.0",
+    "vite": "^7.1.5",
+    "vite-plugin-vue-layouts-next": "^1.0.0",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vue-tsc": "^3.0.7"
   }
 }
