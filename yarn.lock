@@ -2556,9 +2556,9 @@ undici-types@~7.14.0:
   integrity sha512-QQiYxHuyZ9gQUIrmPo3IA+hUl4KYk8uSA7cHrcKd/l3p1OTpZcM0Tbp9x7FAtXdAYhlasd60ncPpgu6ihG6TOA==
 
 unimport@^5.4.0:
-  version "5.4.1"
-  resolved "https://registry.npmjs.org/unimport/-/unimport-5.4.1.tgz"
-  integrity sha512-wMZ2JKUCleCK2zfRHeWcbrUHKXOC3SVBYkyn/wTGzh0THX6sT4hSjuKXxKANN4/WMbT6ZPM4JzcDcnhD2x9Bpg==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-5.5.0.tgz#03a4fffcd2e36943eb28ca9b065016b9eba01b77"
+  integrity sha512-/JpWMG9s1nBSlXJAQ8EREFTFy3oy6USFd8T6AoBaw1q2GGcF4R9yp3ofg32UODZlYEO5VD0EWE1RpI9XDWyPYg==
   dependencies:
     acorn "^8.15.0"
     escape-string-regexp "^5.0.0"
