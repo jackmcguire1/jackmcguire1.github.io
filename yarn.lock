@@ -902,9 +902,9 @@ ajv@^6.12.4:
     uri-js "^4.2.2"
 
 alien-signals@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/alien-signals/-/alien-signals-3.0.0.tgz"
-  integrity sha512-JHoRJf18Y6HN4/KZALr3iU+0vW9LKG+8FMThQlbn4+gv8utsLIkwpomjElGPccGeNwh0FI2HN6BLnyFLo6OyLQ==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/alien-signals/-/alien-signals-3.0.3.tgz#f54e89180e490a9577e4f6f7203720e4335a8715"
+  integrity sha512-2JXjom6R7ZwrISpUphLhf4htUq1aKRCennTJ6u9kFfr3sLmC9+I4CxxVi+McoFnIg+p1HnVrfLT/iCt4Dlz//Q==
 
 ansi-styles@^4.1.0:
   version "4.3.0"
