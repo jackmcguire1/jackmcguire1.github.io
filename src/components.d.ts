@@ -12,6 +12,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    AwsCommunityBuilder: typeof import('./components/AwsCommunityBuilder.vue')['default']
     CareerTimeline: typeof import('./components/CareerTimeline.vue')['default']
     GitHubTrophies: typeof import('./components/GitHubTrophies.vue')['default']
     PortfolioHero: typeof import('./components/PortfolioHero.vue')['default']

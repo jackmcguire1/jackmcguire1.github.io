@@ -5,8 +5,13 @@
       <PortfolioHero />
     </v-sheet>
 
+    <!-- AWS Community Builder -->
+    <v-sheet class="bg-surface-dark" elevation="2">
+      <AwsCommunityBuilder />
+    </v-sheet>
+
     <!-- Projects Section -->
-    <v-sheet id="projects" class="bg-surface-dark scroll-mt-16" elevation="2">
+    <v-sheet id="projects" class="bg-surface-elevated scroll-mt-16" elevation="4">
       <ProjectsSection />
     </v-sheet>
 
@@ -28,6 +33,7 @@
 </template>
 
 <script lang="ts" setup>
+import AwsCommunityBuilder from '@/components/AwsCommunityBuilder.vue'
 import CareerTimeline from '@/components/CareerTimeline.vue'
 import GitHubTrophies from '@/components/GitHubTrophies.vue'
 import PortfolioHero from '@/components/PortfolioHero.vue'
