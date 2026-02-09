@@ -54,7 +54,7 @@
                   <v-chip
                     v-for="tag in item.tags"
                     :key="tag"
-                    :color="item.color"
+                    :color="getTagColor(tag)"
                     size="x-small"
                     variant="tonal"
                   >
@@ -109,7 +109,7 @@ const timelineItems: TimelineItem[] = [
     date: 'Oct 2017 - Sep 2019',
     color: 'green',
     icon: 'mdi-code-tags',
-    tags: ['Go', 'Vue.js', 'AWS'],
+    tags: ['Go', 'Scala', 'AWS'],
     dotSize: 'small',
   },
   {
@@ -118,7 +118,7 @@ const timelineItems: TimelineItem[] = [
     date: 'Jun 2017 - Oct 2017',
     color: 'red',
     icon: 'mdi-video',
-    tags: ['Video Streaming', 'Cloud'],
+    tags: ['Java', 'JavaScript', 'AWS'],
     dotSize: 'small',
   },
   {
@@ -127,6 +127,7 @@ const timelineItems: TimelineItem[] = [
     date: 'Oct 2016 - Jun 2017',
     color: 'purple',
     icon: 'mdi-palette',
+    tags: ['Java Spring', 'PHP', 'WordPress'],
     dotSize: 'small',
   },
   {
@@ -135,6 +136,7 @@ const timelineItems: TimelineItem[] = [
     date: 'Aug 2016 - Oct 2016',
     color: 'blue',
     icon: 'mdi-file-document',
+    tags: ['Java', 'Hibernate'],
     dotSize: 'small',
   },
   {
@@ -152,6 +154,7 @@ const timelineItems: TimelineItem[] = [
     date: 'Aug 2014 - May 2015',
     color: 'blue',
     icon: 'mdi-briefcase',
+    tags: ['Java', 'Hibernate'],
     dotSize: 'small',
   },
   {
@@ -172,6 +175,26 @@ const timelineItems: TimelineItem[] = [
     dotSize: 'small',
   },
 ]
+
+const tagColors: Record<string, string> = {
+  Go: 'cyan',
+  Scala: 'red-darken-1',
+  AWS: 'orange',
+  Kubernetes: 'blue',
+  Architecture: 'purple',
+  Microservices: 'teal',
+  'Team Leadership': 'amber',
+  Java: 'red',
+  'Java Spring': 'green',
+  JavaScript: 'yellow-darken-2',
+  PHP: 'indigo',
+  WordPress: 'blue-lighten-1',
+  Hibernate: 'amber-darken-2',
+}
+
+function getTagColor(tag: string): string {
+  return tagColors[tag] || 'grey'
+}
 </script>
 
 <style scoped lang="scss">

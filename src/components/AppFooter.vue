@@ -98,6 +98,7 @@ const socialLinks = [
 ]
 
 const quickLinks = [
+  { label: 'Blog', href: '#blog', icon: 'mdi-post-outline', external: false },
   { label: 'Projects', href: '#projects', icon: 'mdi-folder-open', external: false },
   { label: 'Skills', href: '#skills', icon: 'mdi-code-tags', external: false },
   { label: 'Career', href: '#career', icon: 'mdi-briefcase', external: false },

@@ -115,7 +115,6 @@ const aboutItems = [
 const contactItems = [
   { icon: 'mdi-email', label: 'jackmcguire35@gmail.com', href: 'mailto:jackmcguire35@gmail.com' },
   { icon: 'mdi-phone', label: '+447954179531', href: 'tel:+447954179531' },
-  { icon: 'mdi-discord', label: 'crazyjack12#2295', href: '#' },
 ]
 </script>
 

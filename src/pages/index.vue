@@ -10,6 +10,11 @@
       <AwsCommunityBuilder />
     </v-sheet>
 
+    <!-- Blog Posts -->
+    <v-sheet id="blog" class="bg-surface-elevated scroll-mt-16" elevation="4">
+      <BlogPosts />
+    </v-sheet>
+
     <!-- Projects Section -->
     <v-sheet id="projects" class="bg-surface-elevated scroll-mt-16" elevation="4">
       <ProjectsSection />
@@ -34,6 +39,7 @@
 
 <script lang="ts" setup>
 import AwsCommunityBuilder from '@/components/AwsCommunityBuilder.vue'
+import BlogPosts from '@/components/BlogPosts.vue'
 import CareerTimeline from '@/components/CareerTimeline.vue'
 import GitHubTrophies from '@/components/GitHubTrophies.vue'
 import PortfolioHero from '@/components/PortfolioHero.vue'
