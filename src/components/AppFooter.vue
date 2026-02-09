@@ -41,6 +41,23 @@
             Staff Engineer at Green Man Gaming. Building scalable solutions and contributing to open source.
           </p>
         </v-col>
+
+        <!-- Quick Links -->
+        <v-col cols="12" md="4">
+          <h4 class="text-h6 mb-4 text-primary">Quick Links</h4>
+          <div class="d-flex flex-column gap-1">
+            <a
+              v-for="link in quickLinks"
+              :key="link.label"
+              class="footer-link text-body-2 text-decoration-none d-flex align-center gap-2"
+              :href="link.href"
+              :target="link.external ? '_blank' : undefined"
+            >
+              <v-icon size="x-small">{{ link.icon }}</v-icon>
+              {{ link.label }}
+            </a>
+          </div>
+        </v-col>
       </v-row>
 
       <v-divider class="my-6" />
@@ -57,28 +74,41 @@
 </template>
 
 <script setup lang="ts">
-  const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear()
 
-  const socialLinks = [
-    {
-      title: 'GitHub',
-      icon: 'mdi-github',
-      href: 'https://github.com/jackmcguire1',
-      color: 'grey-darken-2',
-    },
-    {
-      title: 'LinkedIn',
-      icon: 'mdi-linkedin',
-      href: 'https://www.linkedin.com/in/jack-mcguire/',
-      color: 'blue',
-    },
-    {
-      title: 'Email',
-      icon: 'mdi-email',
-      href: 'mailto:jackmcguire35@gmail.com',
-      color: 'red',
-    },
-  ]
+const socialLinks = [
+  {
+    title: 'GitHub',
+    icon: 'mdi-github',
+    href: 'https://github.com/jackmcguire1',
+    color: 'grey-darken-2',
+  },
+  {
+    title: 'LinkedIn',
+    icon: 'mdi-linkedin',
+    href: 'https://www.linkedin.com/in/jackmcguire1994/',
+    color: 'blue',
+  },
+  {
+    title: 'Email',
+    icon: 'mdi-email',
+    href: 'mailto:jackmcguire35@gmail.com',
+    color: 'red',
+  },
+]
+
+const quickLinks = [
+  { label: 'Projects', href: '#projects', icon: 'mdi-folder-open', external: false },
+  { label: 'Skills', href: '#skills', icon: 'mdi-code-tags', external: false },
+  { label: 'Career', href: '#career', icon: 'mdi-briefcase', external: false },
+  { label: 'Stat-Milestones', href: '/stat-milestones', icon: 'mdi-gamepad-variant', external: false },
+  {
+    label: 'GitHub Repos',
+    href: 'https://github.com/jackmcguire1?tab=repositories',
+    icon: 'mdi-github',
+    external: true,
+  },
+]
 </script>
 
 <style scoped lang="scss">

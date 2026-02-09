@@ -40,9 +40,9 @@ updates:
           - "typescript"
           - "@types/*"
           - "vue-tsc"
-      eslint:
+      biome:
         patterns:
-          - "eslint*"
+          - "@biomejs/*"
       dev-dependencies:
         dependency-type: "development"
         update-types:

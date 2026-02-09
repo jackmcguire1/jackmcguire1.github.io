@@ -90,110 +90,111 @@
 </template>
 
 <script setup lang="ts">
+import alexaImg from '@/assets/alexa.png'
+import discordImg from '@/assets/discord.png'
+// Import images
+import twitchExtensionsImg from '@/assets/twitch-extensions.png'
+import wheelOfFortuneImg from '@/assets/wheel-of-fortune.jpeg'
 
-  import alexaImg from '@/assets/alexa.png'
-  import discordImg from '@/assets/discord.png'
-  // Import images
-  import twitchExtensionsImg from '@/assets/twitch-extensions.png'
-  import wheelOfFortuneImg from '@/assets/wheel-of-fortune.jpeg'
+interface Project {
+  title: string
+  type: string
+  description: string
+  image: string
+  link: string
+  technologies: string[]
+}
 
-  interface Project {
-    title: string
-    type: string
-    description: string
-    image: string
-    link: string
-    technologies: string[]
+const projects: Project[] = [
+  {
+    title: 'Stat-Milestones',
+    type: 'Twitch Extension',
+    description: 'Interactive Twitch extension for tracking streamer milestones and statistics',
+    image: twitchExtensionsImg,
+    link: '/stat-milestones',
+    technologies: ['Go', 'Vue', 'Twitch', 'AWS'],
+  },
+  {
+    title: 'Wheel Of Fortune',
+    type: 'REDIS Hackathon',
+    description: 'Real-time multiplayer wheel of fortune game built for Redis hackathon',
+    image: wheelOfFortuneImg,
+    link: 'https://dev.to/jackmcguire1/wheel-of-fortune-3521',
+    technologies: ['Go', 'Redis', 'Vue', 'Envoy'],
+  },
+  {
+    title: 'ChatGPT Alexa Skill',
+    type: 'Alexa Skill',
+    description: 'Voice-powered AI assistant integrating ChatGPT with Amazon Alexa',
+    image: alexaImg,
+    link: 'https://github.com/jackmcguire1/alexa-chatgpt',
+    technologies: ['Go', 'AWS', 'OpenAI ChatGPT 3.5+', 'Google Gemini'],
+  },
+  {
+    title: 'User Microservice',
+    type: 'Microservice',
+    description: 'Scalable user management microservice with authentication and authorization',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq7NhS34vHRoyhJB5SwOcs5OA6Y3xlaj6OA&usqp=CAU',
+    link: 'https://github.com/jackmcguire1/UserService',
+    technologies: ['Go', 'Docker', 'MongoDB'],
+  },
+  {
+    title: 'Riot Global Rankings',
+    type: 'Hackathon',
+    description: 'Global leaderboard system for League of Legends players',
+    image:
+      'https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif',
+    link: 'https://devpost.com/software/riot-rankings',
+    technologies: ['Go', 'AWS', 'MongoDB'],
+  },
+  {
+    title: 'Stat-Milestones Landing',
+    type: 'Landing Page',
+    description: 'Modern landing page for Stat-Milestones Twitch extension',
+    image:
+      'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/000/771/851/datas/medium.png',
+    link: 'https://stat-milestones.dev',
+    technologies: ['Vuetify', 'GitHub Pages', 'AWS / MongoDB', 'Cloudflare'],
+  },
+  {
+    title: 'Discord Embed Builder',
+    type: 'Developer Tool',
+    description: 'Visual tool for creating and previewing Discord embed messages',
+    image: discordImg,
+    link: 'https://jackmcguire1.github.io/Discord-Publisher/',
+    technologies: ['React', 'Discord API'],
+  },
+]
+
+const techColors: Record<string, string> = {
+  Go: 'cyan',
+  Vue: 'green',
+  React: 'blue',
+  AWS: 'orange',
+  MongoDB: 'green-darken-2',
+  Docker: 'blue-darken-2',
+  Redis: 'red',
+  Twitch: 'deep-purple',
+  'Discord API': 'deep-purple-darken-2',
+  'OpenAI ChatGPT 3.5+': 'teal',
+  'Google Gemini': 'indigo',
+  Vuetify: 'blue-lighten-1',
+  'GitHub Pages': 'grey-darken-3',
+  Cloudflare: 'orange-darken-2',
+  Envoy: 'purple',
+}
+
+function getChipColor(tech: string): string {
+  return techColors[tech] || 'grey'
+}
+
+function openURL(url: string) {
+  if (url.startsWith('/')) {
+    window.location.href = url
+  } else {
+    window.open(url, '_blank')
   }
-
-  const projects: Project[] = [
-    {
-      title: 'Stat-Milestones',
-      type: 'Twitch Extension',
-      description: 'Interactive Twitch extension for tracking streamer milestones and statistics',
-      image: twitchExtensionsImg,
-      link: '/stat-milestones',
-      technologies: ['Go', 'Vue', 'Twitch', 'AWS'],
-    },
-    {
-      title: 'Wheel Of Fortune',
-      type: 'REDIS Hackathon',
-      description: 'Real-time multiplayer wheel of fortune game built for Redis hackathon',
-      image: wheelOfFortuneImg,
-      link: 'https://dev.to/jackmcguire1/wheel-of-fortune-3521',
-      technologies: ['Go', 'Redis', 'Vue', 'Envoy'],
-    },
-    {
-      title: 'ChatGPT Alexa Skill',
-      type: 'Alexa Skill',
-      description: 'Voice-powered AI assistant integrating ChatGPT with Amazon Alexa',
-      image: alexaImg,
-      link: 'https://github.com/jackmcguire1/alexa-chatgpt',
-      technologies: ['Go', 'AWS', 'OpenAI ChatGPT 3.5+', 'Google Gemini'],
-    },
-    {
-      title: 'User Microservice',
-      type: 'Microservice',
-      description: 'Scalable user management microservice with authentication and authorization',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq7NhS34vHRoyhJB5SwOcs5OA6Y3xlaj6OA&usqp=CAU',
-      link: 'https://github.com/jackmcguire1/UserService',
-      technologies: ['Go', 'Docker', 'MongoDB'],
-    },
-    {
-      title: 'Riot Global Rankings',
-      type: 'Hackathon',
-      description: 'Global leaderboard system for League of Legends players',
-      image: 'https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif',
-      link: 'https://devpost.com/software/riot-rankings',
-      technologies: ['Go', 'AWS', 'MongoDB'],
-    },
-    {
-      title: 'Stat-Milestones Landing',
-      type: 'Landing Page',
-      description: 'Modern landing page for Stat-Milestones Twitch extension',
-      image: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/000/771/851/datas/medium.png',
-      link: 'https://stat-milestones.dev',
-      technologies: ['Vuetify', 'GitHub Pages', 'AWS / MongoDB', 'Cloudflare'],
-    },
-    {
-      title: 'Discord Embed Builder',
-      type: 'Developer Tool',
-      description: 'Visual tool for creating and previewing Discord embed messages',
-      image: discordImg,
-      link: 'https://jackmcguire1.github.io/Discord-Publisher/',
-      technologies: ['React', 'Discord API'],
-    },
-  ]
-
-  const techColors: Record<string, string> = {
-    'Go': 'cyan',
-    'Vue': 'green',
-    'React': 'blue',
-    'AWS': 'orange',
-    'MongoDB': 'green-darken-2',
-    'Docker': 'blue-darken-2',
-    'Redis': 'red',
-    'Twitch': 'deep-purple',
-    'Discord API': 'deep-purple-darken-2',
-    'OpenAI ChatGPT 3.5+': 'teal',
-    'Google Gemini': 'indigo',
-    'Vuetify': 'blue-lighten-1',
-    'GitHub Pages': 'grey-darken-3',
-    'Cloudflare': 'orange-darken-2',
-    'Envoy': 'purple',
-  }
-
-  function getChipColor (tech: string): string {
-    return techColors[tech] || 'grey'
-  }
-
-  function openURL (url: string) {
-    if (url.startsWith('/')) {
-      window.location.href = url
-    } else {
-      window.open(url, '_blank')
-    }
-  }
+}
 </script>
 
 <style scoped>

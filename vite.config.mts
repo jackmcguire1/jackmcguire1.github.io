@@ -18,7 +18,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        'main': fileURLToPath(new URL('index.html', import.meta.url)),
+        main: fileURLToPath(new URL('index.html', import.meta.url)),
         'stat-milestones': fileURLToPath(new URL('stat-milestones.html', import.meta.url)),
       },
     },
@@ -37,9 +37,6 @@ export default defineConfig({
         },
       ],
       dts: 'src/auto-imports.d.ts',
-      eslintrc: {
-        enabled: true,
-      },
       vueTemplate: true,
     }),
     Components({
@@ -81,15 +78,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('src', import.meta.url)),
     },
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx',
-      '.mjs',
-      '.ts',
-      '.tsx',
-      '.vue',
-    ],
+    extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
   server: {
     port: 3000,

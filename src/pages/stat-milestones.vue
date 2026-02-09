@@ -96,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-  import twitchExtensionsImg from '@/assets/twitch-extensions.png'
+import twitchExtensionsImg from '@/assets/twitch-extensions.png'
 </script>
 
 <style scoped>

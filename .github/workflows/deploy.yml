@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'yarn'
 
       - name: Get yarn cache directory path
@@ -49,6 +49,13 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Generate GitHub trophies
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: 'username=jackmcguire1&theme=radical&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=-1'
+          path: public/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run tests
         run: yarn type-check

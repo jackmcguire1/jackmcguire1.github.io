@@ -66,72 +66,114 @@
 </template>
 
 <script setup lang="ts">
-  interface SkillCategory {
-    name: string
-    icon: string
-    color: string
-    skills: string[]
+type ChipSize = 'x-small' | 'small' | 'default' | 'large' | 'x-large'
+
+interface SkillCategory {
+  name: string
+  icon: string
+  color: string
+  skills: string[]
+}
+
+interface Skill {
+  name: string
+  color: string
+  size: ChipSize
+}
+
+const skillCategories: SkillCategory[] = [
+  {
+    name: 'Cloud & DevOps',
+    icon: 'mdi-cloud',
+    color: 'blue',
+    skills: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Serverless', 'Cloudflare', 'DNS'],
+  },
+  {
+    name: 'Backend',
+    icon: 'mdi-server',
+    color: 'green',
+    skills: ['Go', 'C#', 'Java', 'Python', 'Node.js', 'GraphQL', 'REST', '.NET Core'],
+  },
+  {
+    name: 'Frontend',
+    icon: 'mdi-monitor-dashboard',
+    color: 'purple',
+    skills: ['Vue.js', 'React', 'Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Webpack'],
+  },
+  {
+    name: 'Concepts',
+    icon: 'mdi-lightbulb',
+    color: 'orange',
+    skills: ['Microservices', 'SaaS', 'Cloud Native', 'Web3', 'E-commerce', 'Data Warehouse'],
+  },
+]
+
+function hashString(str: string): number {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash + str.charCodeAt(i)) | 0
   }
+  return Math.abs(hash)
+}
 
-  interface Skill {
-    name: string
-    color: string
-    size: 'x-small' | 'small' | 'default' | 'large' | 'x-large'
-  }
+const sizes: ChipSize[] = ['small', 'default', 'large', 'x-large']
+const colors = [
+  'deep-purple',
+  'indigo',
+  'blue',
+  'cyan',
+  'teal',
+  'green',
+  'lime',
+  'amber',
+  'orange',
+  'deep-orange',
+  'pink',
+  'purple',
+]
 
-  const skillCategories: SkillCategory[] = [
-    {
-      name: 'Cloud & DevOps',
-      icon: 'mdi-cloud',
-      color: 'blue',
-      skills: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Serverless', 'Cloudflare', 'DNS'],
-    },
-    {
-      name: 'Backend',
-      icon: 'mdi-server',
-      color: 'green',
-      skills: ['Go', 'C#', 'Java', 'Python', 'Node.js', 'GraphQL', 'REST', '.NET Core'],
-    },
-    {
-      name: 'Frontend',
-      icon: 'mdi-monitor-dashboard',
-      color: 'purple',
-      skills: ['Vue.js', 'React', 'Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Webpack'],
-    },
-    {
-      name: 'Concepts',
-      icon: 'mdi-lightbulb',
-      color: 'orange',
-      skills: ['Microservices', 'SaaS', 'Cloud Native', 'Web3', 'E-commerce', 'Data Warehouse'],
-    },
-  ]
-
-  function getRandomSize (): 'x-small' | 'small' | 'default' | 'large' | 'x-large' {
-    const sizes: ('x-small' | 'small' | 'default' | 'large' | 'x-large')[] = ['small', 'default', 'large', 'x-large']
-    return sizes[Math.floor(Math.random() * sizes.length)] as 'x-small' | 'small' | 'default' | 'large' | 'x-large'
-  }
-
-  function getRandomColor (): string {
-    const colors = [
-      'deep-purple', 'indigo', 'blue', 'cyan', 'teal',
-      'green', 'lime', 'amber', 'orange', 'deep-orange',
-      'pink', 'purple',
-    ]
-    return colors[Math.floor(Math.random() * colors.length)] as string
-  }
-
-  const allSkills: Skill[] = [
-    'AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Serverless',
-    'Cloud Native', 'Cloudflare', 'DNS', 'Microservices', 'SaaS',
-    'JavaScript', 'HTML', 'CSS', 'React', 'Java', 'Angular',
-    'Vue.js', 'Node.js', 'GraphQL', 'GO', 'C#', 'Scala',
-    'Python', 'REST', 'Webpack', 'Spring Boot', 'Spring MVC',
-    'TypeScript', '.NET Core', 'Web3', 'Data warehouse', 'E-commerce',
-  ].map(name => ({
+const allSkills: Skill[] = [
+  'AWS',
+  'Azure',
+  'GCP',
+  'Kubernetes',
+  'Docker',
+  'Serverless',
+  'Cloud Native',
+  'Cloudflare',
+  'DNS',
+  'Microservices',
+  'SaaS',
+  'JavaScript',
+  'HTML',
+  'CSS',
+  'React',
+  'Java',
+  'Angular',
+  'Vue.js',
+  'Node.js',
+  'GraphQL',
+  'GO',
+  'C#',
+  'Scala',
+  'Python',
+  'REST',
+  'Webpack',
+  'Spring Boot',
+  'Spring MVC',
+  'TypeScript',
+  '.NET Core',
+  'Web3',
+  'Data warehouse',
+  'E-commerce',
+].map((name) => {
+  const hash = hashString(name)
+  return {
     name,
-    color: getRandomColor(),
-    size: getRandomSize(),
-  }))
+    color: colors[hash % colors.length] as string,
+    size: sizes[hash % sizes.length] as ChipSize,
+  }
+})
 </script>
 
 <style scoped>
