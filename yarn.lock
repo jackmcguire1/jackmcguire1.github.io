@@ -609,9 +609,9 @@ acorn@^8.16.0:
   integrity sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==
 
 alien-signals@^3.0.0:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/alien-signals/-/alien-signals-3.1.2.tgz#26e623e3ed81e401df1a7c503f726e2288a4fa02"
-  integrity sha512-d9dYqZTS90WLiU0I5c6DHj/HcKkF8ZyGN3G5x8wSbslulz70KOxaqCT0hQCo9KOyhVqzqGojvNdJXoTumZOtcw==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/alien-signals/-/alien-signals-3.2.0.tgz#190c895ead52a47f7c8f298418b864d805313a22"
+  integrity sha512-5J9+NpCLHgic4xnZtI8SznvNagwJsZSvRFsAwoLlLw+Edaqa4upCiOC19P8Vx2DqmEvqK2qJBMtI8+9eXOEb/A==
 
 ansi-styles@^6.2.1:
   version "6.2.3"
