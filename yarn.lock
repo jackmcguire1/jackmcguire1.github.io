@@ -591,9 +591,9 @@
     picomatch "^4.0.2"
 
 "@vue/language-core@^3.2.1":
-  version "3.2.9"
-  resolved "https://registry.yarnpkg.com/@vue/language-core/-/language-core-3.2.9.tgz#903dde38a614f6263ace162c9edc2cd479e6c69b"
-  integrity sha512-ie0ojt/0fU/GfIogh+zgHbaYRPlt9S+cLOxcWwF7nTSFh897BVgnFKL2byT4kpp1mlqYWZ2psGwSniyE2xsxYw==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@vue/language-core/-/language-core-3.3.0.tgz#252832898386a5716cba64b4406442ee31162ad4"
+  integrity sha512-EyUxq1b8Yoxk6hQ6X33BIRnfFLb9Rbm9w/8G8y6uMxlQu7CW7yy9JS/z54xSpIvBvVWX6Lt5v1aBGwmrqD4aJw==
   dependencies:
     "@volar/language-core" "2.4.28"
     "@vue/compiler-dom" "^3.5.0"
