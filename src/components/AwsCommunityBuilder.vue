@@ -6,25 +6,40 @@
           <v-row align="center" no-gutters>
             <!-- Badge side -->
             <v-col cols="12" sm="4" class="text-center pa-8">
-              <div class="aws-badge-ring mx-auto mb-4">
-                <v-avatar color="#232F3E" size="120">
-                  <v-icon color="#FF9900" size="64">mdi-aws</v-icon>
-                </v-avatar>
+              <v-badge
+                color="#FF9900"
+                content="Year 2"
+                location="bottom center"
+                offset-y="8"
+                class="aws-year-badge mb-4"
+              >
+                <div class="aws-badge-ring mx-auto">
+                  <v-avatar color="#232F3E" size="120">
+                    <v-icon color="#FF9900" size="64">mdi-aws</v-icon>
+                  </v-avatar>
+                </div>
+              </v-badge>
+              <div class="mt-3">
+                <v-chip color="#FF9900" variant="flat" size="small" class="font-weight-bold">
+                  Community Builder
+                </v-chip>
               </div>
-              <v-chip color="#FF9900" variant="flat" size="small" class="font-weight-bold">
-                Community Builder
-              </v-chip>
             </v-col>
 
             <!-- Content side -->
             <v-col cols="12" sm="8" class="pa-6 pa-sm-8">
-              <h3 class="text-h5 font-weight-bold mb-2">
-                AWS Community Builder
-              </h3>
+              <div class="d-flex align-center flex-wrap gap-2 mb-2">
+                <h3 class="text-h5 font-weight-bold">
+                  AWS Community Builder
+                </h3>
+                <v-chip color="amber-darken-2" size="small" variant="tonal" class="font-weight-bold">
+                  2nd Consecutive Year
+                </v-chip>
+              </div>
               <p class="text-body-1 text-grey-lighten-1 mb-4">
-                Selected as an AWS Community Builder for contributions to the AWS community through
-                knowledge sharing, open source projects, and technical content focused on serverless
-                and cloud-native architectures.
+                Selected as an AWS Community Builder for a second consecutive year, recognising ongoing
+                contributions to the AWS community through knowledge sharing, open source projects, and
+                technical content focused on serverless and cloud-native architectures.
               </p>
 
               <div class="d-flex flex-wrap gap-2 mb-5">

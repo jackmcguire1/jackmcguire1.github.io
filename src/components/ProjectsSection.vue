@@ -92,6 +92,8 @@
 <script setup lang="ts">
 import alexaImg from '@/assets/alexa.png'
 import discordImg from '@/assets/discord.png'
+import noteCanvasImg from '@/assets/note-canvas.jpg'
+import shishaBarImg from '@/assets/shisha-bar.jpg'
 // Import images
 import twitchExtensionsImg from '@/assets/twitch-extensions.png'
 import wheelOfFortuneImg from '@/assets/wheel-of-fortune.jpeg'
@@ -106,6 +108,22 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'Luxe Shisha Lounge',
+    type: 'Web App',
+    description: 'Booking and showcase site for a shisha lounge, with user accounts and reservations',
+    image: shishaBarImg,
+    link: 'https://shisha-bar.pages.dev/',
+    technologies: ['Vue', 'Vuetify', 'Firebase Auth', 'Firestore', 'Cloudflare'],
+  },
+  {
+    title: 'Note Canvas',
+    type: 'Web App',
+    description: 'Infinite canvas for pinning and organising notes, with sign-in and real-time sync',
+    image: noteCanvasImg,
+    link: 'https://note-canvas.pages.dev/b/general',
+    technologies: ['Vue', 'Vuetify', 'Firebase Auth', 'Firestore', 'Cloudflare'],
+  },
   {
     title: 'Stat-Milestones',
     type: 'Twitch Extension',
@@ -182,6 +200,8 @@ const techColors: Record<string, string> = {
   'GitHub Pages': 'grey-darken-3',
   Cloudflare: 'orange-darken-2',
   Envoy: 'purple',
+  'Firebase Auth': 'amber-darken-2',
+  Firestore: 'orange-darken-3',
 }
 
 function getChipColor(tech: string): string {
