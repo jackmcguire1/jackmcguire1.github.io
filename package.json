@@ -22,7 +22,7 @@
     "vuetify": "^4.1.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.0",
+    "@biomejs/biome": "^2.5.1",
     "@tsconfig/node22": "^22.0.5",
     "@types/node": "^26.0.0",
     "@vitejs/plugin-vue": "^6.0.7",
