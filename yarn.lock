@@ -1173,7 +1173,7 @@ pkg-types@^2.3.0:
     exsolve "^1.0.8"
     pathe "^2.0.3"
 
-postcss@^8.5.15:
+postcss@^8.5.15, postcss@^8.5.16:
   version "8.5.16"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.16.tgz#1230ce0b5df354c24c0ea45f99ce5f6a88279d28"
   integrity sha512-vuwillviilfKZsg0VGj5R/YwwcHx4SLsIOI/7K6mQkWx+l5cUHTjj5g0AasTBcyXsbfTgrwsUNmVUb5xVwyPwg==
@@ -1220,7 +1220,7 @@ rfdc@^1.4.1:
   resolved "https://registry.npmjs.org/rfdc/-/rfdc-1.4.1.tgz"
   integrity sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==
 
-rolldown@~1.1.2:
+rolldown@~1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/rolldown/-/rolldown-1.1.3.tgz#87072bfd0d1bdd02a66076a261a62e8e49b3f0e2"
   integrity sha512-1F1eEtUBtFvcGm1HQ9TiUIUHPQG7mSAODrhIzjxoUEFuo8OcbrGLiVLkevNgj84TE4lnHvnumwFjhJO5Eu135g==
@@ -1641,15 +1641,15 @@ vite-plugin-vuetify@^2.1.3:
     debug "^4.3.3"
     upath "^2.0.1"
 
-vite@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-8.1.0.tgz#0734dc1a48faeb2bd5f5b16b66dcbfae484fec55"
-  integrity sha512-BuJcQK/56NQTWDGn4ABea3q4SSBdNPWwNZKTkkUpcMPnLoquSYH8llRtSUIgoL1KSCpHt5eghLShn50mH36y7Q==
+vite@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-8.1.2.tgz#3ac29b5868ccf28c59321391be1ebe906f135ebd"
+  integrity sha512-6YYPbRXTxx6bRXmOn7XdnQAy5DQNHhDgtjhDHI13oe4pY93kkcdGJWxpGwOm++/Wh0QpQhDrpIoVMrmrsI5AGQ==
   dependencies:
     lightningcss "^1.32.0"
     picomatch "^4.0.4"
-    postcss "^8.5.15"
-    rolldown "~1.1.2"
+    postcss "^8.5.16"
+    rolldown "~1.1.3"
     tinyglobby "^0.2.17"
   optionalDependencies:
     fsevents "~2.3.3"
