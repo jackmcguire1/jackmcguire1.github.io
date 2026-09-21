@@ -734,9 +734,9 @@ fill-range@^7.1.1:
     to-regex-range "^5.0.1"
 
 fontaine@^0.8.0:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/fontaine/-/fontaine-0.8.1.tgz#c0a297f5f58cc40a96d0727c83f44a612c4d5772"
-  integrity sha512-IA3MDtmvstTwnyuZTUD1IL42qTR6lI6ND3DEGBHLT5alcBeC/0jo+4jN5XFgG+E7HoPqJqlAUuIL+MhGonyCbQ==
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/fontaine/-/fontaine-0.8.2.tgz#1b025b8f7a38c48e44fc9f4288338c6eee05146e"
+  integrity sha512-l/aOgAnNqSocAxVmVLuN3P+RIFCWHe6ej3oFugRlW3olsnnQwaxHYdfyyF8aFyhhwUFy4k+Ah3ofEp54RIDMWQ==
   dependencies:
     "@capsizecss/unpack" "^4.0.0"
     css-tree "^3.1.0"
