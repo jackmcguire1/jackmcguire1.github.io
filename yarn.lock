@@ -911,14 +911,14 @@ local-pkg@^1.1.2, local-pkg@^1.2.0, local-pkg@^1.2.1:
     quansync "^0.2.11"
 
 magic-regexp@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/magic-regexp/-/magic-regexp-0.11.0.tgz#b786291cf2bc9306386455c18b24e9e209672c0d"
-  integrity sha512-LG77Z/gVnwz7oaDpD4heX6ryl+lcr4l1B2gnP4MMvt2pGhGC1Dfj7dl1pXpP4ih+VQFLuAadeKVa+lARAzfW+Q==
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/magic-regexp/-/magic-regexp-0.11.2.tgz#931f94c35859a881499be42bcaee0b4d19da4e96"
+  integrity sha512-s4i7mq2jJnkB5J1HDX67GmdRoWrgo8tE0cL91bKO+HaquxyR5TiqkjVfLhgS2PXretsN/Gv9kSnRBgQxrLO/Qw==
   dependencies:
-    magic-string "^0.30.21"
+    magic-string "^1.1.0"
     regexp-tree "^0.1.27"
     type-level-regexp "~0.1.17"
-    unplugin "^3.0.0"
+    unplugin "^3.3.0"
 
 magic-string-ast@^1.0.2:
   version "1.0.3"
