@@ -179,8 +179,8 @@ const projects: Project[] = [
     type: 'Developer Tool',
     description: 'Visual tool for creating and previewing Discord embed messages',
     image: discordImg,
-    link: 'https://jackmcguire1.github.io/Discord-Publisher/',
-    technologies: ['React', 'Discord API'],
+    link: 'https://jackmcguire1.github.io/discord-publisher-vue/',
+    technologies: ['Vue', 'Vite', 'Discord API'],
   },
 ]
 
@@ -188,6 +188,7 @@ const techColors: Record<string, string> = {
   Go: 'cyan',
   Vue: 'green',
   React: 'blue',
+  Vite: 'purple-lighten-1',
   AWS: 'orange',
   MongoDB: 'green-darken-2',
   Docker: 'blue-darken-2',
