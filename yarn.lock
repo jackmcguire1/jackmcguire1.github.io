@@ -638,9 +638,9 @@ confbox@^0.3.1:
   integrity sha512-cKUSoKa8YxFZZSmraVi7onONx3amu77ngK3kGpsYHDH7drPwCRkQE1RYMPlLRrMtnciRj274XNRxcHxnKmDSnA==
 
 copy-anything@^4:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/copy-anything/-/copy-anything-4.1.4.tgz#a23abc1ff50d5d01ba2e5bc2c21d3ef98a6ccbe6"
-  integrity sha512-/LLeW0CtsoSybVkEpYjifB2Pis8DUSuwY7QD9FiR98fWkdbdrACw3ilckfnAHMecQ+RFEdZlRt6eCXhYHJbl/g==
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/copy-anything/-/copy-anything-4.1.5.tgz#11866cab9f08ef1f98daac8c468e10d2830294e3"
+  integrity sha512-vePst2VLTSqPglW7Q98VwFpGiGpOHTyXIo81MO5VyLecA5zMbZw/P/V1vmwD1jksa2iJpn/YkDrJ3XhTfzUyhQ==
 
 cross-spawn@^7.0.6:
   version "7.0.6"
