@@ -1417,9 +1417,9 @@ supports-color@^8.1.1:
     has-flag "^4.0.0"
 
 sync-child-process@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/sync-child-process/-/sync-child-process-1.0.2.tgz"
-  integrity sha512-8lD+t2KrrScJ/7KXCSyfhT3/hRq78rC0wBFqNJXv3mZyn6hW2ypM05JmlSvtqRbeq6jqA94oHbxAr2vYsJ8vDA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sync-child-process/-/sync-child-process-1.1.0.tgz#0fef1ab6c8f23133c3adce055033f39c66370bcd"
+  integrity sha512-1LMf/x0kU0CKFSesh5DfYktvj1KhiqYi5LAh5HU2G4SkKk1TGDhsMFBOL47g/E+mNfYpgs365pVNlIYOIHPvlQ==
   dependencies:
     sync-message-port "^1.0.0"
 
