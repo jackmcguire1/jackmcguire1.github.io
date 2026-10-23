@@ -627,6 +627,11 @@ ast-walker-scope@^0.8.3:
     "@babel/parser" "^7.28.4"
     ast-kit "^2.1.3"
 
+balanced-match@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-3.0.1.tgz#e854b098724b15076384266497392a271f4a26a0"
+  integrity sha512-vjtV3hiLqYDNRoiAv0zC4QaGAMPomEoq83PRmYIofPswwZurCeWR5LByXm7SyoL0Zh5+2z0+HC7jG8gSZJUh0w==
+
 birpc@^2.3.0:
   version "2.6.1"
   resolved "https://registry.npmjs.org/birpc/-/birpc-2.6.1.tgz"
@@ -636,6 +641,13 @@ birpc@^2.6.1:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/birpc/-/birpc-2.9.0.tgz#b59550897e4cd96a223e2a6c1475b572236ed145"
   integrity sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==
+
+brace-expansion@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-3.0.9.tgz#5f2748cdc413bf3cb3ffc6f8ede35555af77e321"
+  integrity sha512-OXoli5rxiPrYelC/SwJopbvGT3LgayabD9rSa+IV7RNlpUS60lGzD5IPX8VRajl8JzzOqVQSboWmR/0N0R6jBg==
+  dependencies:
+    balanced-match "^3.0.0"
 
 braces@^3.0.3:
   version "3.0.3"
@@ -1592,13 +1604,15 @@ varint@^6.0.0:
   resolved "https://registry.npmjs.org/varint/-/varint-6.0.0.tgz"
   integrity sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==
 
-vite-plugin-vue-layouts-next@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts-next/-/vite-plugin-vue-layouts-next-3.3.0.tgz#52f6c2bcef04fa240cde1b28cf5d72d4399f2301"
-  integrity sha512-ilTinMNTR48qAJOiz+dXlNcL2MNiNaQfTJGlJHLjaaFC5mBBy5yzzlv+1sXkYlkuB5T/UjjMhgOh8Uuq7hJU7w==
+vite-plugin-vue-layouts-next@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts-next/-/vite-plugin-vue-layouts-next-3.3.1.tgz#e0fc992babe4a46136747646046ed5d33b89d7a7"
+  integrity sha512-lF6ur+g7rez4vYi/AY0txFFFIPl+Vv0upXQVf1eW1wHR1TZep10Erw5VKz3rOu3xZQJvRb6gbkyW/lk9VMLwrA==
   dependencies:
+    brace-expansion "^3.0.9"
     debug "^4.4.3"
-    fast-glob "^3.3.3"
+    picomatch "^4.0.7"
+    tinyglobby "^0.2.17"
 
 vite-plugin-vuetify@^2.1.3:
   version "2.1.3"
