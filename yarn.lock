@@ -573,9 +573,9 @@
     upath "^2.0.1"
 
 "@vuetify/v0@^1.2.3":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@vuetify/v0/-/v0-1.3.1.tgz#51ce798baa09018eeae4ca346d377d0137339132"
-  integrity sha512-NilBnDvGotaP9CGIC+bK7YAcsaCvww9nOEWcPehAYqGqlOIp5xPXbDZUihK9FkoE+Jhz9ZIWUbd5plkMd43JDA==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@vuetify/v0/-/v0-1.3.2.tgz#749c5cd3968b1ae54d88d68c37cceb2a33da1f48"
+  integrity sha512-+LXktqYC91aTbS3WOPvEOjo1CmtwpuAmqQZTtygpR/tVll9uzCQzscNhTPexlyx28bFOn5pbxAQj7LBhqohdIA==
 
 acorn@^8.15.0, acorn@^8.16.0, acorn@^8.18.0:
   version "8.19.0"
