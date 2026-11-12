@@ -698,9 +698,9 @@ birpc@^2.6.1:
   integrity sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==
 
 brace-expansion@^3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-3.0.9.tgz#5f2748cdc413bf3cb3ffc6f8ede35555af77e321"
-  integrity sha512-OXoli5rxiPrYelC/SwJopbvGT3LgayabD9rSa+IV7RNlpUS60lGzD5IPX8VRajl8JzzOqVQSboWmR/0N0R6jBg==
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-3.0.10.tgz#b558b97df8205fc8f62ef1118fe3779169d2f84f"
+  integrity sha512-p5GRqUDU+zdfJgjcBqBz2Xd2cVjgA/hOkVscKAjaIzrgY5m2ZFde/kplf3BUqzmF0IEYCGYmEAs/FF/Ef+YaVw==
   dependencies:
     balanced-match "^3.0.0"
 
