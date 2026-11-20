@@ -15,7 +15,7 @@ declare module 'vue' {
     AwsCommunityBuilder: typeof import('./components/AwsCommunityBuilder.vue')['default']
     BlogPosts: typeof import('./components/BlogPosts.vue')['default']
     CareerTimeline: typeof import('./components/CareerTimeline.vue')['default']
-    GitHubTrophies: typeof import('./components/GitHubTrophies.vue')['default']
+    GitHubSection: typeof import('./components/GitHubSection.vue')['default']
     PortfolioHero: typeof import('./components/PortfolioHero.vue')['default']
     ProjectsSection: typeof import('./components/ProjectsSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

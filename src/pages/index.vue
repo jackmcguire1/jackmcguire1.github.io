@@ -30,9 +30,9 @@
       <CareerTimeline />
     </v-sheet>
 
-    <!-- GitHub Trophies -->
+    <!-- GitHub -->
     <v-sheet id="github" class="bg-surface-elevated scroll-mt-16" elevation="4">
-      <GitHubTrophies />
+      <GitHubSection />
     </v-sheet>
   </div>
 </template>
@@ -41,7 +41,7 @@
 import AwsCommunityBuilder from '@/components/AwsCommunityBuilder.vue'
 import BlogPosts from '@/components/BlogPosts.vue'
 import CareerTimeline from '@/components/CareerTimeline.vue'
-import GitHubTrophies from '@/components/GitHubTrophies.vue'
+import GitHubSection from '@/components/GitHubSection.vue'
 import PortfolioHero from '@/components/PortfolioHero.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'

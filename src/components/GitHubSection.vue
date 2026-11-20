@@ -23,20 +23,20 @@
       </v-col>
     </v-row>
 
-    <!-- Trophies -->
+    <!-- Activity -->
     <v-row justify="center">
       <v-col cols="12" lg="10">
         <v-card color="surface-variant" variant="flat" rounded="lg" class="pa-6">
           <div class="d-flex align-center mb-4">
-            <v-icon color="amber" class="mr-2">mdi-trophy</v-icon>
-            <span class="text-h6 font-weight-bold">Trophies</span>
+            <v-icon color="primary" class="mr-2">mdi-chart-line</v-icon>
+            <span class="text-h6 font-weight-bold">Activity</span>
           </div>
 
           <div class="text-center">
             <img
-              alt="GitHub Trophies"
+              alt="GitHub Contribution Activity"
               class="github-img"
-              src="/trophy.svg"
+              src="https://github-readme-activity-graph.vercel.app/graph?username=jackmcguire1&theme=radical&hide_border=true&bg_color=00000000"
             >
           </div>
         </v-card>
