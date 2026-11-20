@@ -51,7 +51,7 @@
               {{ project.title }}
             </v-card-title>
 
-            <v-card-subtitle>
+            <v-card-subtitle class="project-description">
               {{ project.description }}
             </v-card-subtitle>
 
@@ -242,6 +242,10 @@ function openURL(url: string) {
 
 .project-card:hover {
   transform: translateY(-4px);
+}
+
+.project-description {
+  white-space: normal;
 }
 
 .bg-gradient {
