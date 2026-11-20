@@ -17,7 +17,7 @@ Personal portfolio site for **Jack McGuire** — Staff Engineer, AWS Community B
 
 ### Prerequisites
 
-- Node.js 24+ (see `.node-version`)
+- Node.js 26+ (see `.node-version`)
 - Yarn v1
 
 ### Install

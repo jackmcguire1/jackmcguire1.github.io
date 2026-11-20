@@ -91,6 +91,7 @@
 
 <script setup lang="ts">
 import alexaImg from '@/assets/alexa.png'
+import burpFartImg from '@/assets/burpfart.jpg'
 import discordImg from '@/assets/discord.png'
 import noteCanvasImg from '@/assets/note-canvas.jpg'
 import shishaBarImg from '@/assets/shisha-bar.jpg'
@@ -108,6 +109,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'BurpFart',
+    type: 'WoW Addon',
+    description:
+      'Addon for the new World of Warcraft: Forever that plays synced burp and fart sounds for nearby players',
+    image: burpFartImg,
+    link: 'https://www.curseforge.com/wow/addons/burpfart',
+    technologies: ['Lua', 'Python', 'GitHub Actions', 'CurseForge'],
+  },
   {
     title: 'Luxe Shisha Lounge',
     type: 'Web App',
@@ -203,6 +213,10 @@ const techColors: Record<string, string> = {
   Envoy: 'purple',
   'Firebase Auth': 'amber-darken-2',
   Firestore: 'orange-darken-3',
+  Lua: 'blue-darken-3',
+  Python: 'yellow-darken-2',
+  'GitHub Actions': 'blue-grey',
+  CurseForge: 'deep-orange',
 }
 
 function getChipColor(tech: string): string {

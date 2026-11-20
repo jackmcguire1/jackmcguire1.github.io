@@ -391,10 +391,10 @@
   resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.1.1.tgz#bdb13954851dc43ef5b03992618e0ed5e03c0598"
   integrity sha512-glFIJDvLNDtJhT9qrMFWLPbvS+skxgt4L0K8Ei2YtnhPysAJnsI7nyxSJxKj4ADeKX0OLjC4ntRkwpLOoS3rwA==
 
-"@tsconfig/node22@^22.0.7":
-  version "22.0.7"
-  resolved "https://registry.yarnpkg.com/@tsconfig/node22/-/node22-22.0.7.tgz#de779f23acf5c96f336b317e9ac654e94b09dcc6"
-  integrity sha512-xnYM5q+HTeLm+jRBIB7Mu61OyOmNpgzPmJuhwPODSyITDPIWVK2TXxn/+O5fJ4n/P0u/gPsgSyPw/Dl3Cz/L4g==
+"@tsconfig/node26@^26.0.2":
+  version "26.0.2"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node26/-/node26-26.0.2.tgz#cd97b507c5fcf751a3ee39253d78d2e915cfccd3"
+  integrity sha512-RIBSoNGQxUQ8r4hSrEzS6TrUneoKaCuX6BjL4zF3wqttGq2w06zCea4d8P1gRvM/HZyDT1FQJ8trZSyy/63oMg==
 
 "@tybys/wasm-util@^0.10.3":
   version "0.10.5"
