@@ -92,6 +92,7 @@
 <script setup lang="ts">
 import alexaImg from '@/assets/alexa.png'
 import burpFartImg from '@/assets/burpfart.jpg'
+import crazyJackUtilsImg from '@/assets/crazyjackutils.jpg'
 import discordImg from '@/assets/discord.png'
 import noteCanvasImg from '@/assets/note-canvas.jpg'
 import shishaBarImg from '@/assets/shisha-bar.jpg'
@@ -109,6 +110,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'CrazyJackUtils',
+    type: 'WoW Addon',
+    description:
+      'Toggleable utility modules for World of Warcraft: Forever, starting with Target Finder: auto-managed targeting macros, quest mob search and nearest-service lookup',
+    image: crazyJackUtilsImg,
+    link: 'https://www.curseforge.com/wow/addons/crazyjackutils',
+    technologies: ['Lua', 'Python', 'GitHub Actions', 'CurseForge'],
+  },
   {
     title: 'BurpFart',
     type: 'WoW Addon',
